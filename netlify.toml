@@ -1,0 +1,15 @@
+# Configuration Netlify (facultatif)
+# Ce site est 100 % statique : aucune commande de build n'est nécessaire.
+# Il suffit de publier le dossier racine.
+
+[build]
+  publish = "."
+  command = ""
+
+# En-têtes de sécurité recommandés
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

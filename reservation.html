@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver un créneau — LyoSurgères</title>
+  <meta name="description" content="Réservez en ligne votre créneau de dépôt à l'atelier de lyophilisation de Surgères. Choisissez une date, un horaire et décrivez votre produit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%230f8b9e'/%3E%3Cg stroke='white' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M24 9v30M11 24h26M15 15l18 18M33 15L15 33'/%3E%3C/g%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil LyoSurgères">
+        <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12b5c9"/><stop offset="1" stop-color="#0a5f6e"/></linearGradient></defs>
+          <circle cx="24" cy="24" r="22" fill="url(#g1)"/>
+          <g stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M24 9v30M11 24h26M15 15l18 18M33 15L15 33"/><path d="M24 9l-3 3M24 9l3 3M24 39l-3-3M24 39l3-3M11 24l3-3M11 24l3 3M37 24l-3-3M37 24l-3 3"/></g>
+        </svg>
+        <span>LyoSurgères<small>Lyophilisation à façon</small></span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Prestations</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn--primary" href="reservation.html">Réserver un créneau</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Accueil</a> · Réservation</div>
+        <h1>Réserver un créneau de dépôt</h1>
+        <p>Choisissez une date et un horaire, décrivez votre produit, et envoyez-nous votre demande. Nous vous recontactons rapidement pour confirmer votre rendez-vous à l'atelier de Surgères.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="booking-form" novalidate>
+          <div class="booking-layout">
+
+            <!-- Colonne gauche : date + créneau -->
+            <div>
+              <div class="panel" style="margin-bottom:24px;">
+                <div class="step-label"><span class="dot">1</span><h2>Choisissez une date</h2></div>
+                <div class="calendar">
+                  <div class="cal-head">
+                    <span class="month" id="cal-month">—</span>
+                    <div class="cal-nav">
+                      <button type="button" id="cal-prev" aria-label="Mois précédent"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                      <button type="button" id="cal-next" aria-label="Mois suivant"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                    </div>
+                  </div>
+                  <div class="cal-grid" id="cal-grid" role="grid"></div>
+                  <div class="cal-legend">
+                    <span><i style="background:var(--brand);"></i> Sélectionné</span>
+                    <span><i style="background:var(--frost);border:1px solid var(--line);"></i> Disponible</span>
+                    <span><i style="background:#f6f9fa;"></i> Fermé</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="step-label"><span class="dot">2</span><h2>Choisissez un créneau</h2></div>
+                <div class="slots" id="slots"></div>
+                <p class="field" style="margin:14px 0 0;"><span class="hint">Les horaires indiqués sont des créneaux de dépôt à l'atelier. L'horaire exact vous sera confirmé par retour.</span></p>
+              </div>
+            </div>
+
+            <!-- Colonne droite : récap + coordonnées -->
+            <div class="panel">
+              <div class="step-label"><span class="dot">3</span><h2>Vos coordonnées</h2></div>
+
+              <div class="summary" aria-live="polite">
+                <h3>Votre réservation</h3>
+                <dl>
+                  <dt>Prestation</dt><dd id="sum-service" class="empty">—</dd>
+                  <dt>Date</dt><dd id="sum-date" class="empty">à choisir</dd>
+                  <dt>Créneau</dt><dd id="sum-slot" class="empty">à choisir</dd>
+                </dl>
+              </div>
+
+              <div id="form-alert" class="form-alert" role="status"></div>
+
+              <div class="field">
+                <label for="f-service">Prestation concernée <span class="req">*</span></label>
+                <select id="f-service" name="Prestation" required>
+                  <option value="">— Choisir une prestation —</option>
+                  <option value="alimentaire">Alimentaire (fruits, plats, café…)</option>
+                  <option value="actifs">CBD, probiotiques &amp; protéines</option>
+                  <option value="souvenirs">Souvenirs, fleurs &amp; animaux</option>
+                  <option value="documents">Documents &amp; sinistres (dégât des eaux)</option>
+                  <option value="pro">Producteur / artisan (lot pilote)</option>
+                  <option value="autre">Autre / je ne sais pas</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="f-details">Décrivez votre produit <span class="req">*</span></label>
+                <textarea id="f-details" name="Details" required placeholder="Nature du produit, état (frais / congelé), quantité approximative, objectif…"></textarea>
+                <span class="error-msg">Merci de décrire brièvement votre produit.</span>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-prenom">Prénom <span class="req">*</span></label>
+                  <input id="f-prenom" name="Prenom" type="text" required autocomplete="given-name">
+                  <span class="error-msg">Champ requis.</span>
+                </div>
+                <div class="field">
+                  <label for="f-nom">Nom <span class="req">*</span></label>
+                  <input id="f-nom" name="Nom" type="text" required autocomplete="family-name">
+                  <span class="error-msg">Champ requis.</span>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-email">E-mail <span class="req">*</span></label>
+                  <input id="f-email" name="Email" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
+                  <span class="error-msg">Adresse e-mail invalide.</span>
+                </div>
+                <div class="field">
+                  <label for="f-telephone">Téléphone <span class="req">*</span></label>
+                  <input id="f-telephone" name="Telephone" type="tel" required autocomplete="tel" placeholder="06 12 34 56 78">
+                  <span class="error-msg">Champ requis.</span>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-societe">Société <span class="hint">(facultatif)</span></label>
+                  <input id="f-societe" name="Societe" type="text" autocomplete="organization">
+                </div>
+                <div class="field">
+                  <label for="f-volume">Volume estimé <span class="hint">(facultatif)</span></label>
+                  <input id="f-volume" name="Volume" type="text" placeholder="ex. 2 kg, 5 bocaux…">
+                </div>
+              </div>
+
+              <!-- Champs cachés remplis par le calendrier -->
+              <input type="hidden" id="f-date" name="Date">
+              <input type="hidden" id="f-slot" name="Creneau">
+
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox" id="f-consent" name="Consentement" required>
+                  <span>J'accepte que mes informations soient utilisées pour traiter ma demande de réservation. <span class="req">*</span></span>
+                </label>
+                <span class="error-msg">Merci de cocher cette case pour continuer.</span>
+              </div>
+
+              <button type="submit" id="booking-submit" class="btn btn--primary btn--block btn--lg">Envoyer ma demande de réservation</button>
+              <p class="hint" style="text-align:center;margin-top:12px;">Demande sans engagement — nous confirmons chaque créneau avant traitement.</p>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="color:#fff;">
+            <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0f8b9e"/><g stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M24 9v30M11 24h26M15 15l18 18M33 15L15 33"/></g></svg>
+            <span data-brand>LyoSurgères<small>Lyophilisation à façon</small></span>
+          </div>
+          <p class="footer-note">Atelier de lyophilisation à façon à Surgères, en Charente-Maritime. Nous déshydratons vos produits par le froid, sans conservateur.</p>
+          <div class="footer-social">
+            <a data-social="facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1 .3-2 2-2h2V2.1C18.5 2 17.5 2 16.5 2 13.9 2 12 3.7 12 6.7V10H9v4h3v8z"/></svg></a>
+            <a data-social="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a data-social="linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.6-2 3.9 0 4.6 2.5 4.6 5.8V21h-4v-5c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V21h-4z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Prestations</h4>
+          <ul>
+            <li><a href="reservation.html?service=alimentaire">Alimentaire</a></li>
+            <li><a href="reservation.html?service=actifs">CBD, probiotiques, protéines</a></li>
+            <li><a href="reservation.html?service=souvenirs">Souvenirs &amp; animaux</a></li>
+            <li><a href="reservation.html?service=documents">Documents &amp; sinistres</a></li>
+            <li><a href="reservation.html?service=pro">Producteurs &amp; artisans</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Prestations</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li data-cfg-address></li>
+            <li>Tél. <a data-cfg="phone" data-cfg-href="tel:">05 46 00 00 00</a></li>
+            <li><a data-cfg="email" data-cfg-href="mailto:">contact@lyosurgeres.fr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> <span data-brand>LyoSurgères</span> · Tous droits réservés</span>
+        <span><a href="mentions-legales.html">Mentions légales</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
