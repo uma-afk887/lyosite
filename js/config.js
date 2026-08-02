@@ -82,6 +82,10 @@ window.SITE_CONFIG = {
       cycleBase: 600,   // € pour un cycle à 1 chariot
       chariot: 250,     // € par chariot supplémentaire
       mult: { standard: 1, premium: 1.2, sensible: 1.35 }, // selon la famille de produit
+      // Simulateur de campagne industrielle (valeurs indicatives)
+      kgParCycle: 150,        // kg humides traités par cycle
+      cyclesParSemaine: 10,   // en fonctionnement continu
+      prixTonne: { standard: 9000, premium: 12000, sensible: 16000 }, // € par tonne humide traitée
     },
   },
 };
