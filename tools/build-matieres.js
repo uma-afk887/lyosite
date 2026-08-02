@@ -39,7 +39,7 @@ function header() {
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../services.html">Prestations</a></li>
           <li><a href="index.html">Matières</a></li>
-          <li><a href="../developpement-cycle.html">Développement</a></li>
+          <li><a href="../journal/index.html">Journal</a></li>
           <li><a href="../a-propos.html">À propos</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>

@@ -21,7 +21,7 @@ function attr(s){ return esc(s).replace(/"/g,'&quot;'); }
 function header(){ return `  <a class="skip-link" href="#main">Aller au contenu</a>
   <header class="site-header"><div class="container nav">
       <a class="brand" href="../index.html" aria-label="Accueil LyoSurgères">${MARK}<span>LyoSurgères<small>Lyophilisation à façon</small></span></a>
-      <nav aria-label="Navigation principale"><ul class="nav-links"><li><a href="../index.html">Accueil</a></li><li><a href="../services.html">Prestations</a></li><li><a href="../matieres/index.html">Matières</a></li><li><a href="index.html">Guides</a></li><li><a href="../a-propos.html">À propos</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
+      <nav aria-label="Navigation principale"><ul class="nav-links"><li><a href="../index.html">Accueil</a></li><li><a href="../services.html">Prestations</a></li><li><a href="../matieres/index.html">Matières</a></li><li><a href="../journal/index.html">Journal</a></li><li><a href="../a-propos.html">À propos</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
       <div class="nav-cta"><a class="btn btn--primary" href="../reservation.html">Réserver un créneau</a><button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button></div>
   </div></header>`; }
 function footer(){ return `  <footer class="site-footer"><div class="container"><div class="footer-grid">
