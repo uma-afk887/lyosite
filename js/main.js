@@ -137,4 +137,31 @@
       }
     });
   }
+
+  /* --- Sélecteur de procédé : 3 questions, 1 réponse --- */
+  var dec = document.getElementById('decision');
+  if (dec) {
+    var ans = {};
+    var res = document.getElementById('decision-result');
+    dec.querySelectorAll('.dq').forEach(function (row) {
+      row.querySelectorAll('.dq-btn').forEach(function (b) {
+        b.addEventListener('click', function () {
+          ans[row.getAttribute('data-q')] = b.getAttribute('data-v');
+          row.querySelectorAll('.dq-btn').forEach(function (x) { x.classList.toggle('on', x === b); });
+          updateDecision();
+        });
+      });
+    });
+    function updateDecision() {
+      if (ans.rehydrate === 'oui' || ans.vivant === 'oui') {
+        res.innerHTML = '➜ Procédé recommandé&nbsp;: <b>Lyophilisation</b> — votre produit doit se réhydrater ou contient du vivant / une molécule thermosensible.';
+      } else if (ans.dluo === 'oui') {
+        res.innerHTML = '➜ Procédé recommandé&nbsp;: <b class="tag-mo">Séchage micro-ondes</b> — une DLUO longue au meilleur coût, sans réhydratation ni thermosensibilité.';
+      } else if (ans.rehydrate && ans.vivant && ans.dluo) {
+        res.innerHTML = 'Aucun procédé ne s\'impose seul&nbsp;: <a href="contact.html">parlez-nous de votre produit</a>, nous vous dirons lequel coûte le moins cher.';
+      } else {
+        res.textContent = 'Répondez aux 3 questions pour voir le procédé recommandé.';
+      }
+    }
+  }
 })();

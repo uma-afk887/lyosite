@@ -408,6 +408,32 @@ ul { color: var(--ink-soft); }
 .sectors .chip svg { width:16px; height:16px; color:var(--brand); }
 .rd-note { text-align:center; color:var(--muted); font-size:.9rem; margin-top:18px; }
 
+/* ---------- Message / citation de positionnement ---------- */
+.pullquote { max-width: 920px; margin: 0 auto; text-align:center; }
+.pullquote blockquote { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.35rem, 3vw, 2rem); line-height:1.32; color: var(--ink); margin:0; text-wrap: balance; }
+.pullquote blockquote b { color: var(--brand-deep); font-weight:700; }
+.pullquote cite { display:block; margin-top:18px; font-style:normal; color:var(--muted); font-size:.95rem; }
+
+/* ---------- Sélecteur de décision (3 questions, 1 réponse) ---------- */
+.decision { max-width: 880px; margin: 40px auto 0; background:#fff; border:1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow:hidden; }
+.dq { display:flex; align-items:center; justify-content:space-between; gap:16px 24px; padding:20px 24px; border-top:1px solid var(--line); flex-wrap:wrap; }
+.dq:first-child { border-top:none; }
+.dq p { margin:0; font-weight:600; color:var(--ink); font-size:1.02rem; }
+.dq-btns { display:flex; gap:8px; flex:0 0 auto; }
+.dq-btn { border:1px solid var(--line); background:var(--frost); color:var(--ink-soft); font-family:var(--font-head); font-weight:600; font-size:.95rem; padding:8px 20px; border-radius:999px; cursor:pointer; transition:.15s; }
+.dq-btn:hover { border-color:var(--brand); color:var(--brand-deep); }
+.dq-btn.on { background:var(--brand); color:#fff; border-color:var(--brand-deep); }
+.decision-result { padding:22px 24px; background:var(--brand-050); border-top:1px solid var(--line); text-align:center; font-family:var(--font-head); font-weight:600; color:var(--ink-soft); font-size:1.05rem; line-height:1.5; }
+.decision-result b { color:var(--brand-deep); }
+.decision-result .tag-mo { color:#b45309; }
+.decision-result a { color:var(--brand-deep); text-decoration:underline; }
+
+/* ---------- Encadré prix / offre ---------- */
+.price-tag { display:inline-flex; align-items:baseline; gap:8px; margin-top:14px; font-family:var(--font-head); }
+.price-tag b { font-size:1.15rem; color:var(--brand-deep); }
+.price-tag span { font-size:.86rem; color:var(--muted); }
+.card--highlight { border-color: var(--brand); box-shadow: var(--shadow-md); }
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }

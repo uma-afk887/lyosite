@@ -22,7 +22,18 @@ LyoSurgères (marque « LyoSurgères — Lyophilisation à façon ») est un ate
 - Lyophilisation premium : séchage à froid par sublimation, pour les produits d'exception.
 - Séchage accéléré par micro-ondes : pour les gros volumes ; qualité remarquable du produit fini et délais fortement réduits.
 - Mise en sachet & conditionnement : produit stable, protégé de l'air et de l'humidité, prêt à commercialiser.
+- Conditionnement barrière : barrière EVOH ou aluminium, inertage à l'azote, absorbeur d'oxygène.
 - Laboratoire ouvert à l'accueil des entreprises et marques en R&D.
+
+## Approche
+La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un produit stable. Nous indiquons lequel des deux procédés (lyophilisation ou séchage micro-ondes) coûte le moins cher, selon 3 critères :
+1. Le produit doit-il se réhydrater ? Si oui → lyophilisation.
+2. Contient-il du vivant ou une molécule thermosensible ? Si oui → lyophilisation.
+3. Cherche-t-on surtout une DLUO longue au meilleur coût ? Si oui → séchage micro-ondes.
+
+## Prestations d'ingénierie (facturables)
+- Développement de cycle (essai pilote) : rapport avec courbe de séchage, rendement mesuré, activité de l'eau (aw) finale, recommandation de procédé et d'emballage. 800 à 2 500 € par essai, déductible du premier lot industriel. Voir https://www.lyosurgeres.fr/developpement-cycle.html
+- Analyse de stabilité & DLUO : mesure d'aw, isotherme de sorption, vieillissement accéléré, et DLUO argumentée pour l'étiquette. 1 500 à 4 000 € par produit.
 
 ## Pages
 - [Accueil](https://www.lyosurgeres.fr/index.html) : présentation, prestations et réservation.
