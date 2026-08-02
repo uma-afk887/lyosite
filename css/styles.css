@@ -480,6 +480,22 @@ ul { color: var(--ink-soft); }
 .nextstep-label { display:inline-block; font-family:var(--font-head); font-weight:600; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--brand-deep); background:var(--brand-100); padding:5px 12px; border-radius:999px; }
 .nextstep h2 { margin:14px 0 8px; }
 
+/* ---------- Mur d'avis (Review) ---------- */
+.avis-wall { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:34px; }
+@media(max-width:900px){ .avis-wall{ grid-template-columns:1fr; } }
+.avis-card { background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); padding:22px; display:flex; flex-direction:column; gap:12px; height:100%; }
+.avis-stars { color:#f5a623; letter-spacing:2px; font-size:1rem; }
+.avis-text { color:var(--ink); font-size:1.02rem; line-height:1.55; margin:0; }
+.avis-who { display:flex; align-items:center; gap:12px; margin-top:auto; }
+.avis-avatar { flex:0 0 42px; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--brand-100); color:var(--brand-deep); font-family:var(--font-head); font-weight:700; }
+.avis-name { font-family:var(--font-head); font-weight:600; color:var(--ink); }
+.avis-role { color:var(--muted); font-size:.86rem; }
+.avis-badge { align-self:flex-start; font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:#9a3412; background:#fff7ed; border:1px solid #fed7aa; border-radius:999px; padding:2px 10px; }
+
+/* ---------- FAQ générale : groupes ---------- */
+.faq-group { margin-top:36px; }
+.faq-group > h2 { border-bottom:2px solid var(--brand-100); padding-bottom:8px; }
+
 /* ---------- Tableau comparateur ---------- */
 .compare-wrap { overflow-x:auto; margin-top:34px; border-radius:var(--radius-lg); box-shadow:var(--shadow-md); }
 .compare { width:100%; border-collapse:collapse; min-width:680px; background:#fff; }

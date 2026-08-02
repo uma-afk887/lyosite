@@ -50,6 +50,8 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 - [Qu'est-ce que la lyophilisation](https://www.lyosurgeres.fr/qu-est-ce-que-la-lyophilisation.html) : principe (sublimation), 3 étapes, usages.
 - [Lyophilisation vs déshydratation](https://www.lyosurgeres.fr/lyophilisation-vs-deshydratation.html) : comparatif air chaud / micro-ondes sous vide / lyophilisation.
 - [Capacité industrielle](https://www.lyosurgeres.fr/capacite-industrielle.html) : 850 m², ~150 kg/cycle, conteneurs frigorifiques, simulateur de campagne.
+- [Bonbons & confiserie](https://www.lyosurgeres.fr/bonbons-confiserie.html) : lyophilisation des bonbons du client (freeze-dried candy), cycles courts, dès un chariot, créneaux week-end.
+- [FAQ](https://www.lyosurgeres.fr/faq.html) : 31 questions (procédé, produits, prix, délais, logistique, DLUO, réglementation, confidentialité).
 - [Stockage froid](https://www.lyosurgeres.fr/stockage-froid.html) : chambre positive/négative, conteneurs, température enregistrée ; 4 semaines offertes pour un cycle réservé.
 - [Abonnement capacité](https://www.lyosurgeres.fr/abonnement-capacite.html) : réservation de cycles à l'année, minimum garanti, remise 10 % au-delà de 24 cycles, simulateur de budget.
 - [Journal de l'atelier](https://www.lyosurgeres.fr/journal/index.html) : retours d'expérience hebdomadaires (matière, ratio, aw, réussites et échecs).
