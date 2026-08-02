@@ -394,6 +394,20 @@ ul { color: var(--ink-soft); }
 .skip-link { position:absolute; left:-999px; top:0; background:#fff; padding:10px 16px; z-index:100; border-radius:0 0 10px 0; }
 .skip-link:focus { left:0; }
 
+/* ---------- Témoignages / références R&D ---------- */
+.testimonial { display:flex; flex-direction:column; gap:14px; height:100%; }
+.testimonial .stars { color:#f5a623; letter-spacing:2px; font-size:1rem; }
+.testimonial blockquote { margin:0; font-size:1.06rem; color:var(--ink); line-height:1.55; }
+.testimonial figcaption { display:flex; align-items:center; gap:12px; margin-top:auto; padding-top:6px; }
+.testimonial .avatar { flex:0 0 42px; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--brand-100); color:var(--brand-deep); font-family:var(--font-head); font-weight:700; font-size:1rem; }
+.testimonial figcaption .who { display:flex; flex-direction:column; }
+.testimonial figcaption strong { color:var(--ink); font-family:var(--font-head); font-size:.98rem; }
+.testimonial figcaption span { color:var(--muted); font-size:.86rem; }
+.sectors { display:flex; flex-wrap:wrap; gap:10px 12px; justify-content:center; margin-top:30px; }
+.sectors .chip { display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border:1px solid var(--line); border-radius:999px; background:var(--white); color:var(--ink-soft); font-family:var(--font-head); font-weight:600; font-size:.88rem; }
+.sectors .chip svg { width:16px; height:16px; color:var(--brand); }
+.rd-note { text-align:center; color:var(--muted); font-size:.9rem; margin-top:18px; }
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
