@@ -41,6 +41,7 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 - [Prestations](https://www.lyosurgeres.fr/services.html) : détail de chaque service et FAQ.
 - [Test échantillon 200 g](https://www.lyosurgeres.fr/test-echantillon.html) : essai à 250-500 €, fiche technique, déductible du 1er lot.
 - [Développement de cycle](https://www.lyosurgeres.fr/developpement-cycle.html) : essai pilote 800-2500 €.
+- [Calculateur de DLUO](https://www.lyosurgeres.fr/stabilite-dluo.html) : outil gratuit pour estimer la durée de vie selon famille, lipides, emballage, température ; encart pédagogique sur l'aw.
 - [À propos](https://www.lyosurgeres.fr/a-propos.html) : mission, capacités (micro-ondes, mise en sachet), procédé.
 - [Réservation](https://www.lyosurgeres.fr/reservation.html) : choix d'une date et d'un créneau de dépôt.
 - [Contact](https://www.lyosurgeres.fr/contact.html) : adresse, téléphone, e-mail, formulaire.

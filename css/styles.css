@@ -438,6 +438,22 @@ ul { color: var(--ink-soft); }
 .price-tag span { font-size:.86rem; color:var(--muted); }
 .card--highlight { border-color: var(--brand); box-shadow: var(--shadow-md); }
 
+/* ---------- Calculateur de DLUO ---------- */
+.dluo-widget { background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-md); padding:24px; }
+.dluo-fields { display:grid; grid-template-columns:1fr 1fr; gap:14px 18px; }
+@media (max-width:560px){ .dluo-fields{ grid-template-columns:1fr; } }
+.dluo-out { margin-top:20px; border-top:1px solid var(--line); padding-top:18px; }
+.dluo-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:560px){ .dluo-grid{ grid-template-columns:1fr; } }
+.dluo-cell { background:var(--brand-050); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px; }
+.dluo-k { display:block; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-family:var(--font-head); font-weight:600; }
+.dluo-v { display:block; margin-top:4px; color:var(--ink); font-size:1rem; }
+.dluo-v b { color:var(--brand-deep); font-size:1.15rem; }
+.dluo-ok { color:var(--ok); font-size:.82rem; font-weight:600; white-space:nowrap; }
+.dluo-note { margin-top:16px; padding:12px 14px; background:#fff7ed; border:1px solid #fed7aa; border-radius:var(--radius); color:#9a3412; font-size:.92rem; line-height:1.5; }
+.dluo-disc { margin-top:14px; font-size:.86rem; color:var(--muted); line-height:1.5; }
+.dluo-disc a { color:var(--brand-deep); }
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
