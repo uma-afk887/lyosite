@@ -100,7 +100,8 @@ function footer() {
   </footer>`;
 }
 
-function metaHead(title, desc, canonical, keywords) {
+function metaHead(title, desc, canonical, keywords, ogImage) {
+  ogImage = ogImage || 'https://www.lyosurgeres.fr/og-cover.svg';
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(title)}</title>
@@ -109,6 +110,8 @@ function metaHead(title, desc, canonical, keywords) {
   <meta name="author" content="LyoSurgères">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${canonical}">
+  <link rel="alternate" hreflang="fr" href="${canonical}">
+  <link rel="alternate" hreflang="x-default" href="${canonical}">
   <meta name="theme-color" content="#0f8b9e">
   <meta name="geo.region" content="FR-17">
   <meta name="geo.placename" content="Surgères">
@@ -120,28 +123,91 @@ function metaHead(title, desc, canonical, keywords) {
   <meta property="og:title" content="${attr(title)}">
   <meta property="og:description" content="${attr(desc)}">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="https://www.lyosurgeres.fr/og-cover.svg">
+  <meta property="og:image" content="${ogImage}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${attr(title)}">
   <meta name="twitter:description" content="${attr(desc)}">
-  <meta name="twitter:image" content="https://www.lyosurgeres.fr/og-cover.svg">
+  <meta name="twitter:image" content="${ogImage}">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%230f8b9e'/%3E%3Cg stroke='white' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M24 9v30M11 24h26M15 15l18 18M33 15L15 33'/%3E%3C/g%3E%3C/svg%3E">`;
 }
 
-function fiche(m) {
-  const url = `https://www.lyosurgeres.fr/matieres/${m.slug}.html`;
-  const title = `${m.titre} — guide, ratio, DLUO | LyoSurgères`;
-  const desc = clip(`${m.titre} : ratio ${m.ratio}, cycle ${m.cycle}, aₓ cible ${m.aw}. Procédé recommandé : ${m.procede}. ${m.procedeWhy}`, 158);
-  const kw = `lyophiliser ${m.nom}, ${m.nom} lyophilisé, ${m.titre}, lyophilisation ${m.famille}, DLUO ${m.nom}, ratio frais sec, séchage à froid, Surgères, La Rochelle`;
+// Paragraphes : découpe sur double saut de ligne, échappe le HTML.
+function paras(txt) {
+  return String(txt).split(/\n\n+/).map(function (p) { return '          <p>' + esc(p.trim()) + '</p>'; }).join('\n');
+}
+function section(eyebrow, title, content) {
+  if (!content) return '';
+  return `
+    <section class="section">
+      <div class="container" style="max-width:820px;">
+        <span class="eyebrow">${esc(eyebrow)}</span>
+        <h2>${esc(title)}</h2>
+${paras(content)}
+      </div>
+    </section>`;
+}
 
-  const faq = [
+// Liste des 4 emplacements d'image (auto si le JSON n'en fournit pas).
+const IMG_TYPES = [
+  { type: 'avant-apres', label: 'Avant / après', w: 1200, h: 630 },
+  { type: 'macro', label: 'Macro / texture', w: 800, h: 600 },
+  { type: 'plateau', label: 'Sur plateau de lyophilisation', w: 800, h: 600 },
+  { type: 'rehydratation', label: 'Réhydratation', w: 800, h: 600 },
+];
+function imageList(m) {
+  if (m.images && m.images.length) {
+    return m.images.map(function (i) {
+      var t = IMG_TYPES.filter(function (x) { return x.type === i.type; })[0] || IMG_TYPES[1];
+      return { fichier: i.fichier || ('lyophiliser-' + m.slug + '-' + i.type), alt: i.alt, legende: i.legende || t.label, type: i.type, w: t.w, h: t.h };
+    });
+  }
+  return IMG_TYPES.map(function (t) {
+    return { fichier: 'lyophiliser-' + m.slug + '-' + t.type, alt: m.nom + ' lyophilisé — ' + t.label.toLowerCase(), legende: t.label, type: t.type, w: t.w, h: t.h };
+  });
+}
+// Placeholder SVG « liste de tournage » (dimensions réelles, nom du fichier attendu).
+function placeholderSVG(m, im) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${im.w}" height="${im.h}" viewBox="0 0 ${im.w} ${im.h}" role="img" aria-label="${attr(im.alt)}">
+  <rect width="${im.w}" height="${im.h}" fill="#eef8fa"/>
+  <rect x="8" y="8" width="${im.w - 16}" height="${im.h - 16}" fill="none" stroke="#0f8b9e" stroke-width="3" stroke-dasharray="12 8"/>
+  <g fill="#0a5f6e" font-family="'Segoe UI',Roboto,Arial,sans-serif" text-anchor="middle">
+    <text x="${im.w / 2}" y="${im.h / 2 - 26}" font-size="30" font-weight="700">${esc(m.nom)}</text>
+    <text x="${im.w / 2}" y="${im.h / 2 + 12}" font-size="22" font-weight="600">Prise de vue : ${esc(im.legende)}</text>
+    <text x="${im.w / 2}" y="${im.h / 2 + 48}" font-size="16" font-family="monospace" fill="#33505f">${esc(im.fichier)}.webp</text>
+    <text x="${im.w / 2}" y="${im.h - 28}" font-size="14" fill="#6b8391">Photo à venir · ${im.w}×${im.h}</text>
+  </g>
+</svg>`;
+}
+
+function faqOf(m) {
+  if (m.faq && m.faq.length) return m.faq.map(function (f) { return { q: f.q, a: f.a }; });
+  return [
     { q: `Peut-on lyophiliser ${m.nomDe.replace(/^de /, '')} ?`, a: `${m.procede} recommandé. ${m.procedeWhy}` },
     { q: `Quel est le ratio frais vers sec ${m.nomDe} ?`, a: `Environ ${m.ratio}, pour une teneur en eau de départ d'environ ${m.eau}. Durée de cycle indicative : ${m.cycle}.` },
-    { q: `Quelle DLUO pour ${m.nomDe.replace(/^de /, '')} lyophilisé ?`, a: `${m.dluoTxt} L'aₓ cible recommandée est de ${m.aw}.` },
+    { q: `Quelle DLUO pour ${m.nomDe.replace(/^de /, '')} lyophilisé ?`, a: `${m.dluoTxt} L'aw cible recommandée est de ${m.aw}.` },
   ];
+}
+
+function fiche(m) {
+  const url = `https://www.lyosurgeres.fr/matieres/${m.slug}.html`;
+  const title = `${m.titre} — ratio, cycle, DLUO & procédé | LyoSurgères`;
+  const desc = clip((m.intro ? m.intro.split(/(?<=[.!?])\s/)[0] + ' ' : '') + `${m.titre} : ratio ${m.ratio}, cycle ${m.cycle}, aw ${m.aw}. Procédé recommandé : ${m.procede}.`, 158);
+  const kw = `lyophiliser ${m.nom}, ${m.nom} lyophilisé, ${m.titre}, lyophilisation ${m.famille}, DLUO ${m.nom}, ratio frais sec, séchage à froid, Surgères, La Rochelle`;
+
+  const imgs = imageList(m);
+  const lead = imgs[0];
+  const ogImg = `https://www.lyosurgeres.fr/img/matieres/${lead.fichier}.webp`;
+  const gallery = imgs.slice(1);
+  const fig = (im, isLead) => `<figure class="fiche-fig${isLead ? ' fiche-fig--lead' : ''}">
+          <img src="../img/matieres/${im.fichier}.svg" width="${im.w}" height="${im.h}" loading="lazy" decoding="async" alt="${attr(im.alt)}">
+          <figcaption>${esc(im.legende)} <span class="hint">· visuel à venir : ${esc(im.fichier)}.webp</span></figcaption>
+        </figure>`;
+
+  const faq = faqOf(m);
   const ld = [
-    { '@context': 'https://schema.org', '@type': 'Article', headline: m.titre, about: m.nom, inLanguage: 'fr', mainEntityOfPage: url, author: { '@type': 'Organization', name: 'LyoSurgères' }, publisher: { '@type': 'Organization', name: 'LyoSurgères' }, image: 'https://www.lyosurgeres.fr/og-cover.svg' },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: m.titre, about: m.nom, inLanguage: 'fr', mainEntityOfPage: url, author: { '@type': 'Organization', name: 'LyoSurgères' }, publisher: { '@type': 'Organization', name: 'LyoSurgères' },
+      image: imgs.map(im => ({ '@type': 'ImageObject', contentUrl: `https://www.lyosurgeres.fr/img/matieres/${im.fichier}.webp`, caption: im.legende, description: im.alt, width: im.w, height: im.h })) },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.lyosurgeres.fr/index.html' },
@@ -152,14 +218,14 @@ function fiche(m) {
 
   const related = (m.related || []).filter(s => bySlug[s]).slice(0, 6).map(s =>
     `<li><a href="${s}.html">Lyophiliser ${esc(bySlug[s].nomDe.replace(/^de /, ''))}</a></li>`).join('\n            ');
-
   const pieges = (m.pieges || []).map(p => `<li>${esc(p)}</li>`).join('\n            ');
   const apps = (m.applications || []).map(a => `<li>${esc(a)}</li>`).join('\n            ');
+  const faqHtml = faq.map(f => `          <details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n');
 
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
-${metaHead(title, desc, url, kw)}
+${metaHead(title, desc, url, kw, ogImg)}
 ${ld.map(x => `  <script type="application/ld+json">\n  ${JSON.stringify(x)}\n  </script>`).join('\n')}
 </head>
 <body>
@@ -169,14 +235,20 @@ ${header()}
       <div class="container">
         <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="index.html">Matières</a> · ${esc(m.nom)}</div>
         <h1>${esc(m.titre)}</h1>
-        <p>${esc(m.procedeWhy)}</p>
+        <p>${esc(m.intro || m.procedeWhy)}</p>
       </div>
     </section>
 
     <section class="section">
+      <div class="container" style="max-width:960px;">
+        ${fig(lead, true)}
+      </div>
+    </section>
+
+    <section class="section section--frost">
       <div class="container">
         <div class="center"><span class="eyebrow">${esc(FAM[m.famille] || m.famille)}</span><h2>En bref</h2></div>
-        <div class="dluo-grid" style="max-width:820px;margin:34px auto 0;">
+        <div class="dluo-grid" style="max-width:820px;margin:30px auto 0;">
           <div class="dluo-cell"><span class="dluo-k">Ratio frais → sec</span><span class="dluo-v"><b>${esc(m.ratio)}</b></span></div>
           <div class="dluo-cell"><span class="dluo-k">Teneur en eau de départ</span><span class="dluo-v">${esc(m.eau)}</span></div>
           <div class="dluo-cell"><span class="dluo-k">Durée de cycle indicative</span><span class="dluo-v">${esc(m.cycle)}</span></div>
@@ -185,17 +257,32 @@ ${header()}
         </div>
       </div>
     </section>
-
+${section('Le procédé en détail', 'Comment ' + m.nom + ' se comporte à la lyophilisation', m.comportement)}
+${section('Réglages', 'Paramètres de cycle', m.parametres)}
+    <section class="section section--frost">
+      <div class="container" style="max-width:820px;">
+        <span class="eyebrow">Points de vigilance</span>
+        <h2>Pièges connus</h2>
+        <ul class="check-list" style="margin-top:16px;">
+            ${pieges}
+        </ul>
+      </div>
+    </section>
+${gallery.length ? `
+    <section class="section">
+      <div class="container">
+        <div class="fiche-gallery">
+          ${gallery.map(im => fig(im, false)).join('\n          ')}
+        </div>
+      </div>
+    </section>` : ''}
+${section('Selon la matière', 'Variantes & provenance', m.variantes)}
     <section class="section section--frost">
       <div class="container split">
         <div>
-          <span class="eyebrow">Procédé &amp; vigilance</span>
-          <h2>Pourquoi ${esc(m.procede.toLowerCase())}&nbsp;?</h2>
-          <p>${esc(m.procedeWhy)}</p>
-          <h3 style="margin-top:22px;">Pièges connus &amp; points de vigilance</h3>
-          <ul class="check-list">
-            ${pieges}
-          </ul>
+          <span class="eyebrow">Conservation</span>
+          <h2>Conservation &amp; DLUO</h2>
+${m.conservation ? paras(m.conservation) : '          <p>' + esc(m.dluoTxt) + '</p>'}
         </div>
         <div>
           <div class="panel">
@@ -207,22 +294,42 @@ ${header()}
         </div>
       </div>
     </section>
+${section('Comparaison', 'Face aux autres procédés de séchage', m.comparaison)}
+    <section class="section">
+      <div class="container" style="max-width:820px;">
+        <span class="eyebrow">Débouchés</span>
+        <h2>Marchés &amp; applications</h2>
+${m.debouches ? paras(m.debouches) : ''}
+        <ul class="check-list" style="margin-top:14px;">
+            ${apps}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--frost">
+      <div class="container" style="max-width:820px;">
+        <div class="center"><span class="eyebrow">FAQ</span><h2>Questions fréquentes — ${esc(m.nom)}</h2></div>
+        <div class="faq" style="margin-top:30px;">
+${faqHtml}
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <div class="container split">
         <div>
-          <span class="eyebrow">Débouchés</span>
-          <h2>Applications</h2>
-          <ul class="check-list">
-            ${apps}
-          </ul>
-          <div style="margin-top:24px;"><a class="btn btn--primary btn--lg" href="../test-echantillon.html">Tester ${esc(m.nomDe.replace(/^de /, ''))} — 250 à 500 €</a></div>
-          <p class="hint" style="margin-top:10px;">Envoyez-nous 200&nbsp;g&nbsp;: vous recevez l'échantillon lyophilisé et une fiche technique. Déductible du premier lot.</p>
+          <div class="nextstep">
+            <span class="nextstep-label">Marche 1 · Comprendre → Marche 2 · Tester</span>
+            <h2>Prochaine étape : envoyez-nous 200&nbsp;g</h2>
+            <p>Vous avez les repères ${esc(m.nomDe)}. La suite logique&nbsp;: nous envoyer un échantillon et repartir avec une fiche technique sur <em>votre</em> produit — rendement, a<sub>w</sub> finale, coût au kilo.</p>
+            <a class="btn btn--primary btn--lg" href="../test-echantillon.html">Tester ${esc(m.nomDe.replace(/^de /, ''))} — 250 à 500 €</a>
+            <p class="hint" style="margin-top:10px;">Déductible de votre premier lot.</p>
+          </div>
         </div>
         <div>
           <div class="panel">
             <h3 style="margin-top:0;">Matières proches</h3>
-            <ul class="footer-like" style="list-style:none;padding:0;margin:0;line-height:2;">
+            <ul style="list-style:none;padding:0;margin:0;line-height:2;">
             ${related}
             </ul>
             <p style="margin-top:14px;"><a href="index.html">← Toute la bibliothèque des matières</a></p>
@@ -333,12 +440,34 @@ ${footer()}
 `;
 }
 
+// Compte de mots du contenu <main> (hors balises).
+function wordCount(html) {
+  var body = (html.match(/<main[\s\S]*?<\/main>/) || [''])[0];
+  var text = body.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ');
+  return (text.trim().match(/\S+/g) || []).length;
+}
+
 // --- Écriture ---
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
-let n = 0;
-data.forEach(m => { fs.writeFileSync(path.join(OUT, m.slug + '.html'), fiche(m)); n++; });
+const IMG_OUT = path.join(ROOT, 'img', 'matieres');
+if (!fs.existsSync(IMG_OUT)) fs.mkdirSync(IMG_OUT, { recursive: true });
+let n = 0, thin = [], imgN = 0;
+data.forEach(m => {
+  const html = fiche(m);
+  fs.writeFileSync(path.join(OUT, m.slug + '.html'), html);
+  n++;
+  const wc = wordCount(html);
+  if (wc < 800) thin.push(m.slug + ' (' + wc + ')');
+  // Placeholders images « liste de tournage »
+  imageList(m).forEach(im => {
+    const p = path.join(IMG_OUT, im.fichier + '.svg');
+    if (!fs.existsSync(p)) { fs.writeFileSync(p, placeholderSVG(m, im)); imgN++; }
+  });
+});
 fs.writeFileSync(path.join(OUT, 'index.html'), indexPage());
-console.log('Généré : ' + n + ' fiches + index dans /matieres/');
+console.log('Généré : ' + n + ' fiches + index dans /matieres/ ; ' + imgN + ' placeholders images créés');
+if (thin.length) console.log('⚠ Fiches sous 800 mots (' + thin.length + '/' + n + ') : ' + thin.join(', '));
+else console.log('✓ Toutes les fiches dépassent 800 mots');
 // Lignes sitemap (à intégrer dans sitemap.xml)
 console.log('SITEMAP:');
 console.log('  <url><loc>https://www.lyosurgeres.fr/matieres/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>');

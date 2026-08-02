@@ -1,52 +1,1521 @@
 [
-  { "slug": "huitre", "titre": "Lyophiliser des huîtres", "nom": "huître", "nomDe": "de l'huître", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "85 %", "cycle": "24–36 h", "aw": "0,30–0,50", "procede": "Lyophilisation", "procedeWhy": "Chair fragile et iodée : seul le froid préserve la texture et les arômes marins.", "pieges": ["Congeler très vite pour éviter les cristaux qui déchirent la chair.", "Produit gras : ne pas sur-sécher, viser aw 0,30–0,50."], "dluoTxt": "5 à 9 mois en sachet, 12 à 18 mois en barrière azotée.", "applications": ["Snack marin haut de gamme", "Poudre d'huître pour la gastronomie", "Garniture instantanée"], "related": ["moule", "oursin", "saint-jacques", "crevette", "encornet"] },
-  { "slug": "moule", "titre": "Lyophiliser des moules", "nom": "moule", "nomDe": "de la moule", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "lt2", "ratio": "5:1", "eau": "80 %", "cycle": "24–30 h", "aw": "0,30–0,50", "procede": "Lyophilisation", "procedeWhy": "Préserve la couleur orangée et le goût sans cuisson agressive.", "pieges": ["Décoquiller et rincer le sable avant congélation.", "Reprend vite l'humidité : conditionnement barrière conseillé."], "dluoTxt": "6 à 10 mois en sachet, jusqu'à 18 mois en barrière azotée.", "applications": ["Soupes et paëllas instantanées", "Poudre umami marine", "En-cas protéiné"], "related": ["huitre", "crevette", "encornet", "saint-jacques", "coproduits-poisson"] },
-  { "slug": "oursin", "titre": "Lyophiliser des oursins", "nom": "oursin", "nomDe": "de l'oursin", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "m2a10", "ratio": "5:1", "eau": "78 %", "cycle": "28–40 h", "aw": "0,30–0,50", "procede": "Lyophilisation", "procedeWhy": "Gonades très délicates et grasses : le froid seul évite le rancissement du goût.", "pieges": ["Manipuler la langue d'oursin sans l'écraser.", "Riche en lipides : oxydation rapide sans barrière azotée."], "dluoTxt": "4 à 7 mois en sachet, 10 à 15 mois en barrière azotée.", "applications": ["Poudre d'oursin de chef", "Assaisonnement iodé premium"], "related": ["huitre", "saint-jacques", "moule", "encornet"] },
-  { "slug": "crevette", "titre": "Lyophiliser des crevettes", "nom": "crevette", "nomDe": "de la crevette", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "lt2", "ratio": "5:1", "eau": "78 %", "cycle": "24–30 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Réhydratation quasi à l'identique, texture et couleur préservées.", "pieges": ["Décortiquer avant traitement pour une réhydratation homogène.", "Éviter la sur-cuisson préalable qui durcit la chair."], "dluoTxt": "8 à 12 mois en sachet, plus en barrière azotée.", "applications": ["Plats lyophilisés de randonnée", "Nouilles et soupes instantanées", "Snack protéiné"], "related": ["moule", "huitre", "encornet", "saint-jacques"] },
-  { "slug": "saint-jacques", "titre": "Lyophiliser des saint-jacques", "nom": "noix de saint-jacques", "nomDe": "de la saint-jacques", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "lt2", "ratio": "5:1", "eau": "78 %", "cycle": "26–34 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Noix noble et sucrée : le froid conserve le moelleux à la réhydratation.", "pieges": ["Séparer noix et corail, sensibilités différentes.", "Congélation lente = perte d'eau à la réhydratation."], "dluoTxt": "8 à 12 mois en sachet.", "applications": ["Gastronomie instantanée", "Poudre d'assaisonnement fin"], "related": ["huitre", "crevette", "moule", "oursin"] },
-  { "slug": "wakame", "titre": "Lyophiliser de l'algue wakamé", "nom": "algue wakamé", "nomDe": "du wakamé", "famille": "marin", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "8:1", "eau": "88 %", "cycle": "18–26 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Conserve la couleur verte et les minéraux marins, réhydratation immédiate.", "pieges": ["Bien rincer le sel avant traitement.", "Produit maigre : viser une aw basse pour une longue conservation."], "dluoTxt": "12 à 24 mois en sachet.", "applications": ["Salades et soupes instantanées", "Poudre d'algue riche en iode"], "related": ["spiruline", "chlorella", "huitre", "coproduits-poisson"] },
-  { "slug": "spiruline", "titre": "Lyophiliser de la spiruline", "nom": "spiruline", "nomDe": "de la spiruline", "famille": "marin", "dluoFamille": "maigre-vegetal", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "80 %", "cycle": "20–30 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Le froid préserve la phycocyanine, les protéines et les antioxydants mieux que le séchage à chaud.", "pieges": ["Éviter toute montée en température qui dégrade la couleur bleu-vert.", "Conditionner à l'abri de la lumière et de l'oxygène."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Paillettes et poudre premium", "Compléments alimentaires", "Colorant naturel"], "related": ["chlorella", "wakame", "kombucha", "matcha-the"] },
-  { "slug": "chlorella", "titre": "Lyophiliser de la chlorella", "nom": "chlorella", "nomDe": "de la chlorella", "famille": "marin", "dluoFamille": "maigre-vegetal", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "80 %", "cycle": "20–30 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Préserve chlorophylle et parois cellulaires actives.", "pieges": ["Paroi cellulaire : préciser si un broyage est attendu.", "Sensible à l'oxydation, prévoir une barrière."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Compléments détox", "Poudre nutritionnelle premium"], "related": ["spiruline", "wakame", "matcha-the"] },
-  { "slug": "encornet", "titre": "Lyophiliser de l'encornet", "nom": "encornet", "nomDe": "de l'encornet", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "lt2", "ratio": "5:1", "eau": "80 %", "cycle": "24–32 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Chair maigre qui se réhydrate bien pour la cuisine instantanée.", "pieges": ["Trancher finement pour un séchage homogène.", "Éviter le collapse des anneaux épais."], "dluoTxt": "8 à 12 mois en sachet.", "applications": ["Plats marins instantanés", "Snack protéiné"], "related": ["crevette", "moule", "huitre", "saint-jacques"] },
-  { "slug": "coproduits-poisson", "titre": "Lyophiliser des coproduits de poisson", "nom": "coproduits de poisson", "nomDe": "des coproduits de poisson", "famille": "marin", "dluoFamille": "marin-gras", "dluoLipides": "gt10", "ratio": "4:1", "eau": "72 %", "cycle": "28–40 h", "aw": "0,30–0,50", "procede": "Lyophilisation", "procedeWhy": "Valorise têtes, parures et arêtes en poudre riche ; le froid limite l'oxydation des lipides marins.", "pieges": ["Très gras : oxydation rapide, barrière azotée + absorbeur indispensables.", "Ne pas sur-sécher : optimum de stabilité vers aw 0,30–0,50."], "dluoTxt": "5 à 9 mois en sachet, 12 à 18 mois en barrière azotée (repère saumon : ~155 j en PLA à 20 °C).", "applications": ["Poudre riche en oméga-3", "Base de bouillon", "Petfood premium"], "related": ["huitre", "moule", "oursin", "wakame"] },
-
-  { "slug": "fraise", "titre": "Lyophiliser des fraises", "nom": "fraise", "nomDe": "de la fraise", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "10:1", "eau": "91 %", "cycle": "24–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Croquant fondant, couleur et vitamines préservées : la référence du fruit lyophilisé.", "pieges": ["Trancher pour un séchage régulier.", "Hygroscopique : refermer vite, conditionnement barrière."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Céréales et barres", "Chocolaterie et pâtisserie", "En-cas sain"], "related": ["framboise", "myrtille", "banane", "mangue", "pomme"] },
-  { "slug": "framboise", "titre": "Lyophiliser des framboises", "nom": "framboise", "nomDe": "de la framboise", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "9:1", "eau": "86 %", "cycle": "24–34 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Arôme intense et couleur vive conservés, structure fragile respectée.", "pieges": ["Fruit fragile : manipulation douce après séchage.", "Les akènes restent croquants, le préciser."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Poudre aromatique", "Décor pâtisserie", "Granola premium"], "related": ["fraise", "myrtille", "banane", "mangue"] },
-  { "slug": "myrtille", "titre": "Lyophiliser des myrtilles", "nom": "myrtille", "nomDe": "de la myrtille", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "8:1", "eau": "84 %", "cycle": "26–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Peau cireuse : préserve anthocyanes et antioxydants sans chaleur.", "pieges": ["Inciser ou pré-traiter la peau pour accélérer le séchage.", "Sucre élevé : éviter le collapse par séchage trop rapide."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Snack antioxydant", "Muesli et barres", "Poudre colorante naturelle"], "related": ["fraise", "framboise", "banane", "pomme"] },
-  { "slug": "banane", "titre": "Lyophiliser des bananes", "nom": "banane", "nomDe": "de la banane", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "4:1", "eau": "74 %", "cycle": "24–34 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Chips fondantes et sucrées, sans huile ni brunissement.", "pieges": ["Brunissement enzymatique : traiter et congeler vite.", "Trancher régulièrement pour un séchage homogène."], "dluoTxt": "12 à 18 mois en sachet barrière.", "applications": ["Chips de fruit", "Poudre pour smoothies", "Alimentation infantile"], "related": ["mangue", "pomme", "fraise", "myrtille"] },
-  { "slug": "mangue", "titre": "Lyophiliser des mangues", "nom": "mangue", "nomDe": "de la mangue", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "7:1", "eau": "83 %", "cycle": "26–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Concentre le sucre et l'arôme tropical, couleur orangée intacte.", "pieges": ["Très sucrée : risque de collapse, cycle maîtrisé.", "Trancher en épaisseur régulière."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Snack tropical", "Poudre aromatique", "Pâtisserie"], "related": ["banane", "fraise", "framboise", "pomme"] },
-  { "slug": "pomme", "titre": "Lyophiliser des pommes", "nom": "pomme", "nomDe": "de la pomme", "famille": "fruits", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "8:1", "eau": "85 %", "cycle": "22–32 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Croquant aérien, goût concentré, sans additif.", "pieges": ["Brunissement : ajout d'acide ascorbique possible.", "Trancher fin pour un croquant homogène."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Chips de pomme", "Compotes instantanées", "Céréales"], "related": ["banane", "mangue", "fraise", "myrtille"] },
-  { "slug": "tomate", "titre": "Lyophiliser des tomates", "nom": "tomate", "nomDe": "de la tomate", "famille": "legumes", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "16:1", "eau": "94 %", "cycle": "26–38 h", "aw": "0,20–0,30", "procede": "Micro-ondes sous vide", "procedeWhy": "Pour de la poudre à longue DLUO au meilleur coût, le micro-ondes sous vide suffit ; réservez la lyophilisation aux pétales de chef.", "pieges": ["Très riche en eau : rendement faible, prévoir le volume.", "Sucre + acidité : surveiller le brunissement."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Poudre d'assaisonnement", "Soupes instantanées", "Pétales de chef (en lyophilisation)"], "related": ["betterave", "epinard", "pomme", "champignon-paris"] },
-  { "slug": "betterave", "titre": "Lyophiliser de la betterave", "nom": "betterave", "nomDe": "de la betterave", "famille": "legumes", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "9:1", "eau": "87 %", "cycle": "24–34 h", "aw": "0,20–0,30", "procede": "Micro-ondes sous vide", "procedeWhy": "Poudre colorante à fort volume : le micro-ondes sous vide offre la meilleure DLUO au coût le plus bas.", "pieges": ["Colorant tenace : dédier le matériel.", "La bétalaïne est thermosensible : maîtriser la température."], "dluoTxt": "18 à 24 mois en barrière opaque.", "applications": ["Colorant rose naturel", "Poudre nutritionnelle", "Boulangerie"], "related": ["tomate", "epinard", "curcuma", "pomme"] },
-  { "slug": "epinard", "titre": "Lyophiliser des épinards", "nom": "épinard", "nomDe": "de l'épinard", "famille": "legumes", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "14:1", "eau": "92 %", "cycle": "20–30 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Conserve la couleur verte et les vitamines, réhydratation immédiate.", "pieges": ["Feuille fine : séchage rapide mais fragile.", "Rendement faible, prévoir le volume."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Poudre verte", "Plats instantanés", "Smoothies"], "related": ["betterave", "tomate", "basilic", "menthe"] },
-  { "slug": "champignon-paris", "titre": "Lyophiliser des champignons de Paris", "nom": "champignon de Paris", "nomDe": "du champignon de Paris", "famille": "champignons", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "10:1", "eau": "90 %", "cycle": "22–32 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Réhydratation quasi à l'identique, umami concentré.", "pieges": ["Brunissement rapide : traiter frais.", "Trancher régulièrement."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Poudre umami", "Sauces et risottos instantanés"], "related": ["cepe", "truffe", "epinard", "tomate"] },
-  { "slug": "cepe", "titre": "Lyophiliser des cèpes", "nom": "cèpe", "nomDe": "du cèpe", "famille": "champignons", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "9:1", "eau": "88 %", "cycle": "24–34 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Préserve l'arôme boisé intense, très supérieur au séchage à chaud.", "pieges": ["Vérifier l'absence de vers avant traitement.", "Arôme volatil : conditionner à l'abri de l'air."], "dluoTxt": "12 à 24 mois en sachet barrière.", "applications": ["Poudre aromatique de chef", "Bouillons premium", "Risottos"], "related": ["champignon-paris", "truffe", "epinard"] },
-  { "slug": "truffe", "titre": "Lyophiliser de la truffe", "nom": "truffe", "nomDe": "de la truffe", "famille": "champignons", "dluoFamille": "maigre-vegetal", "dluoLipides": "m2a10", "ratio": "4:1", "eau": "72 %", "cycle": "26–36 h", "aw": "0,20–0,35", "procede": "Lyophilisation", "procedeWhy": "Fixe des arômes très volatils et fragiles impossibles à conserver autrement.", "pieges": ["Arômes extrêmement volatils : cycle et conditionnement soignés.", "Produit à forte valeur : traçabilité renforcée."], "dluoTxt": "12 à 18 mois en barrière hermétique.", "applications": ["Poudre de truffe", "Assaisonnement gastronomique"], "related": ["cepe", "champignon-paris"] },
-
-  { "slug": "foie-volaille", "titre": "Lyophiliser du foie de volaille", "nom": "foie de volaille", "nomDe": "du foie de volaille", "famille": "carne", "dluoFamille": "carne", "dluoLipides": "m2a10", "ratio": "4:1", "eau": "72 %", "cycle": "26–36 h", "aw": "0,30–0,40", "procede": "Lyophilisation", "procedeWhy": "Concentre les protéines et le fer, très appétent pour le petfood premium.", "pieges": ["Produit gras : barrière azotée conseillée.", "Chaîne du froid stricte avant traitement."], "dluoTxt": "8 à 14 mois en barrière azotée.", "applications": ["Friandises pour animaux premium", "Poudre protéinée", "Compléments"], "related": ["foie-gras", "oeuf", "colostrum", "placenta"] },
-  { "slug": "foie-gras", "titre": "Lyophiliser du foie gras", "nom": "foie gras", "nomDe": "du foie gras", "famille": "carne", "dluoFamille": "carne", "dluoLipides": "gt10", "ratio": "3:1", "eau": "60 %", "cycle": "30–44 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Produit très gras et noble : le froid préserve le fondant, le chaud le ferait fondre.", "pieges": ["Très riche en lipides : oxydation rapide, barrière + absorbeur indispensables.", "Ne pas sur-sécher, optimum vers aw 0,30–0,45."], "dluoTxt": "4 à 8 mois en sachet, 10 à 15 mois en barrière azotée + absorbeur.", "applications": ["Copeaux et poudre de chef", "Assaisonnement gastronomique"], "related": ["foie-volaille", "oeuf", "truffe"] },
-  { "slug": "oeuf", "titre": "Lyophiliser des œufs", "nom": "œuf", "nomDe": "de l'œuf", "famille": "carne", "dluoFamille": "carne", "dluoLipides": "m2a10", "ratio": "4:1", "eau": "75 %", "cycle": "26–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Poudre d'œuf entier réhydratable, protéines préservées.", "pieges": ["Battre et pasteuriser avant traitement (sécurité sanitaire).", "Le jaune, gras, oxyde : barrière conseillée."], "dluoTxt": "10 à 18 mois en barrière.", "applications": ["Poudre d'œuf de randonnée", "Boulangerie et pâtisserie", "Protéines"], "related": ["foie-volaille", "colostrum", "fromage"] },
-  { "slug": "colostrum", "titre": "Lyophiliser du colostrum", "nom": "colostrum", "nomDe": "du colostrum", "famille": "laitier", "dluoFamille": "poudre-laitiere", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "80 %", "cycle": "28–40 h", "aw": "0,10–0,25", "procede": "Lyophilisation", "procedeWhy": "Préserve les immunoglobulines thermosensibles, détruites par le séchage à chaud.", "pieges": ["Chaleur interdite : molécules bioactives fragiles.", "aw très basse requise pour la stabilité."], "dluoTxt": "18 à 24 mois en barrière opaque.", "applications": ["Compléments immunitaires", "Nutrition sportive premium"], "related": ["kefir", "yaourt", "fromage", "oeuf"] },
-  { "slug": "kefir", "titre": "Lyophiliser du kéfir", "nom": "kéfir", "nomDe": "du kéfir", "famille": "laitier", "dluoFamille": "ferment", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "88 %", "cycle": "26–38 h", "aw": "0,10–0,20", "procede": "Lyophilisation", "procedeWhy": "Maintient les ferments vivants : la lyophilisation est la seule voie de conservation durable.", "pieges": ["Ajout de cryoprotecteurs pour la viabilité.", "aw très basse et barrière pour préserver les souches."], "dluoTxt": "12 à 24 mois en barrière azotée.", "applications": ["Grains de kéfir stabilisés", "Ferments prêts à l'emploi", "Compléments probiotiques"], "related": ["levain", "kombucha", "yaourt", "colostrum"] },
-  { "slug": "fromage", "titre": "Lyophiliser du fromage", "nom": "fromage", "nomDe": "du fromage", "famille": "laitier", "dluoFamille": "poudre-laitiere", "dluoLipides": "gt10", "ratio": "3:1", "eau": "50 %", "cycle": "28–40 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Poudre ou éclats croquants qui conservent le goût affiné.", "pieges": ["Gras élevé : barrière azotée contre l'oxydation.", "Brunissement de Maillard si aw et température montent."], "dluoTxt": "6 à 12 mois en barrière azotée.", "applications": ["Poudre de fromage", "Snack croquant", "Assaisonnement"], "related": ["yaourt", "colostrum", "oeuf", "foie-gras"] },
-  { "slug": "yaourt", "titre": "Lyophiliser du yaourt", "nom": "yaourt", "nomDe": "du yaourt", "famille": "laitier", "dluoFamille": "poudre-laitiere", "dluoLipides": "m2a10", "ratio": "6:1", "eau": "85 %", "cycle": "26–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Bouchées fondantes et acidulées, ferments partiellement préservés.", "pieges": ["Sucre + protéines : surveiller le brunissement.", "Conditionner à l'abri de l'humidité."], "dluoTxt": "10 à 18 mois en sachet barrière.", "applications": ["Bouchées de yaourt", "Poudre pour smoothies", "Snack enfant"], "related": ["kefir", "fromage", "colostrum", "fraise"] },
-
-  { "slug": "levain", "titre": "Lyophiliser du levain", "nom": "levain", "nomDe": "du levain", "famille": "ferments", "dluoFamille": "ferment", "dluoLipides": "lt2", "ratio": "3:1", "eau": "55 %", "cycle": "24–34 h", "aw": "0,10–0,20", "procede": "Lyophilisation", "procedeWhy": "Fige les levures et bactéries vivantes tout en gardant leur pouvoir levant.", "pieges": ["Cryoprotecteurs pour la survie des souches.", "Reprise d'humidité fatale : barrière + absorbeur."], "dluoTxt": "12 à 24 mois en barrière azotée.", "applications": ["Levain sec réactivable", "Kits de boulangerie", "Souches de collection"], "related": ["kombucha", "kefir", "cafe"] },
-  { "slug": "kombucha", "titre": "Lyophiliser du kombucha", "nom": "kombucha", "nomDe": "du kombucha", "famille": "ferments", "dluoFamille": "ferment", "dluoLipides": "lt2", "ratio": "12:1", "eau": "92 %", "cycle": "24–34 h", "aw": "0,10–0,20", "procede": "Lyophilisation", "procedeWhy": "Stabilise la culture (SCOBY) et les arômes sans chaleur.", "pieges": ["Très aqueux : faible rendement.", "Souches sensibles : viabilité à documenter."], "dluoTxt": "12 à 24 mois en barrière azotée.", "applications": ["Culture kombucha stabilisée", "Poudre aromatique", "Compléments"], "related": ["levain", "kefir", "the", "gingembre"] },
-  { "slug": "chanvre", "titre": "Lyophiliser du chanvre", "nom": "chanvre", "nomDe": "du chanvre", "famille": "botanique", "dluoFamille": "gras-vegetal", "dluoLipides": "m2a10", "ratio": "5:1", "eau": "78 %", "cycle": "22–32 h", "aw": "0,30–0,45", "procede": "Lyophilisation", "procedeWhy": "Préserve les actifs botaniques et les arômes végétaux sensibles à la chaleur.", "pieges": ["Feuille ou graine : traitement différent.", "Actifs sensibles à la lumière et à l'oxygène."], "dluoTxt": "12 à 18 mois en barrière opaque.", "applications": ["Poudre d'actifs botaniques", "Infusions", "Compléments"], "related": ["basilic", "menthe", "pissenlit", "curcuma"] },
-  { "slug": "basilic", "titre": "Lyophiliser du basilic", "nom": "basilic", "nomDe": "du basilic", "famille": "botanique", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "12:1", "eau": "90 %", "cycle": "16–24 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Garde la couleur verte et les huiles essentielles perdues au séchage à chaud.", "pieges": ["Arômes volatils : cycle court, conditionnement immédiat.", "Feuille fragile après séchage."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Herbes aromatiques premium", "Poudre pour sauces", "Décor culinaire"], "related": ["menthe", "pissenlit", "epinard", "cepe"] },
-  { "slug": "menthe", "titre": "Lyophiliser de la menthe", "nom": "menthe", "nomDe": "de la menthe", "famille": "botanique", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "11:1", "eau": "88 %", "cycle": "16–24 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Fixe le menthol volatil et la couleur, très supérieur au séchage classique.", "pieges": ["Menthol volatil : conditionner à l'abri de l'air.", "Cycle court pour préserver l'arôme."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Infusions premium", "Poudre aromatique", "Cocktails"], "related": ["basilic", "the", "gingembre", "pissenlit"] },
-  { "slug": "pissenlit", "titre": "Lyophiliser du pissenlit", "nom": "pissenlit", "nomDe": "du pissenlit", "famille": "botanique", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "12:1", "eau": "89 %", "cycle": "16–24 h", "aw": "0,20–0,30", "procede": "Micro-ondes sous vide", "procedeWhy": "Pour une poudre botanique à longue DLUO au meilleur coût, le micro-ondes sous vide suffit.", "pieges": ["Bien nettoyer la plante sauvage.", "Fleur et racine se traitent séparément."], "dluoTxt": "18 à 24 mois en barrière opaque.", "applications": ["Infusions", "Poudre d'actifs", "Compléments"], "related": ["basilic", "menthe", "chanvre", "curcuma"] },
-  { "slug": "gingembre", "titre": "Lyophiliser du gingembre", "nom": "gingembre", "nomDe": "du gingembre", "famille": "botanique", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "6:1", "eau": "82 %", "cycle": "22–32 h", "aw": "0,20–0,30", "procede": "Micro-ondes sous vide", "procedeWhy": "Pour de la poudre à fort volume et longue DLUO, le micro-ondes sous vide est le plus économique ; lyophilisation pour un gingembre premium réhydratable.", "pieges": ["Fibreux : trancher fin.", "Gingérol thermosensible : maîtriser la température."], "dluoTxt": "18 à 24 mois en barrière.", "applications": ["Poudre d'épice", "Infusions", "Compléments"], "related": ["curcuma", "menthe", "the", "cafe"] },
-  { "slug": "curcuma", "titre": "Lyophiliser du curcuma", "nom": "curcuma", "nomDe": "du curcuma", "famille": "botanique", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "6:1", "eau": "80 %", "cycle": "22–32 h", "aw": "0,20–0,30", "procede": "Micro-ondes sous vide", "procedeWhy": "Poudre colorante et active à fort volume : le micro-ondes sous vide offre la meilleure DLUO au coût le plus bas.", "pieges": ["Colorant tenace : matériel dédié.", "Curcumine sensible à la lumière : barrière opaque."], "dluoTxt": "18 à 24 mois en barrière opaque.", "applications": ["Épice et colorant", "Compléments (curcumine)", "Boissons dorées"], "related": ["gingembre", "betterave", "pissenlit", "chanvre"] },
-  { "slug": "cafe", "titre": "Lyophiliser du café", "nom": "café", "nomDe": "du café", "famille": "boissons", "dluoFamille": "maigre-vegetal", "dluoLipides": "m2a10", "ratio": "3:1", "eau": "60 %", "cycle": "20–30 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Le café soluble lyophilisé conserve l'arôme bien mieux que l'atomisation à chaud.", "pieges": ["Extraire et concentrer avant traitement.", "Arômes volatils : conditionner à l'abri de l'air."], "dluoTxt": "18 à 24 mois en barrière.", "applications": ["Café soluble premium", "Boissons instantanées"], "related": ["the", "matcha-the", "gingembre", "kombucha"] },
-  { "slug": "the", "titre": "Lyophiliser du thé", "nom": "thé", "nomDe": "du thé", "famille": "boissons", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "5:1", "eau": "78 %", "cycle": "18–28 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Infusion concentrée puis lyophilisée : arôme et polyphénols préservés.", "pieges": ["Concentrer l'infusion avant traitement.", "Polyphénols sensibles à l'oxydation."], "dluoTxt": "18 à 24 mois en barrière.", "applications": ["Thé instantané premium", "Poudre pour boissons"], "related": ["cafe", "matcha-the", "menthe", "gingembre"] },
-  { "slug": "matcha-the", "titre": "Lyophiliser du matcha", "nom": "matcha", "nomDe": "du matcha", "famille": "boissons", "dluoFamille": "maigre-vegetal", "dluoLipides": "m2a10", "ratio": "5:1", "eau": "76 %", "cycle": "18–28 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Préserve la couleur verte vive et les catéchines antioxydantes.", "pieges": ["Couleur sensible à la lumière et à l'oxygène.", "Broyage fin à préciser."], "dluoTxt": "12 à 24 mois en barrière opaque.", "applications": ["Poudre premium", "Boissons et pâtisserie"], "related": ["the", "cafe", "spiruline", "menthe"] },
-
-  { "slug": "miel", "titre": "Lyophiliser du miel", "nom": "miel", "nomDe": "du miel", "famille": "special", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "1,3:1", "eau": "18 %", "cycle": "variable", "aw": "0,50–0,60", "procede": "Lyophilisation", "procedeWhy": "Difficile : très riche en sucres, le miel a tendance à collapser. Un pré-traitement ou un support est souvent nécessaire — un essai pilote est indispensable.", "pieges": ["Sucres très hygroscopiques : collapse fréquent.", "Souvent besoin d'un support (maltodextrine) ou d'un mélange."], "dluoTxt": "Variable selon la formulation ; barrière hermétique impérative.", "applications": ["Poudre de miel", "Enrobage et snacking", "Nutrition sportive"], "related": ["fraise", "gingembre", "cafe", "levain"] },
-  { "slug": "bouquet-mariee", "titre": "Lyophiliser un bouquet de mariée", "nom": "bouquet de mariée", "nomDe": "du bouquet de mariée", "famille": "souvenirs", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "—", "eau": "variable", "cycle": "5–15 j", "aw": "n/a", "procede": "Lyophilisation", "procedeWhy": "Fige la forme et les couleurs des fleurs fraîches, mémoire intacte pour des années.", "pieges": ["Traiter très frais, dans les 48 h.", "Cycle long et délicat, fleur par fleur."], "dluoTxt": "Plusieurs années sous cloche ou cadre à l'abri de l'humidité.", "applications": ["Souvenir de mariage", "Encadrement, cloche, résine"], "related": ["fleur", "document-sinistre", "placenta"] },
-  { "slug": "fleur", "titre": "Lyophiliser des fleurs", "nom": "fleur", "nomDe": "de la fleur", "famille": "souvenirs", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "—", "eau": "variable", "cycle": "4–12 j", "aw": "n/a", "procede": "Lyophilisation", "procedeWhy": "Préserve pétales et couleurs sans les écraser, contrairement au pressage.", "pieges": ["Chaque espèce a son cycle.", "Fragilité après séchage, manipulation soigneuse."], "dluoTxt": "Plusieurs années à l'abri de l'humidité et de la lumière.", "applications": ["Décoration et art floral", "Souvenirs", "Confettis et cosmétique"], "related": ["bouquet-mariee", "basilic", "menthe"] },
-  { "slug": "document-sinistre", "titre": "Lyophiliser des documents sinistrés", "nom": "document sinistré", "nomDe": "du document sinistré", "famille": "special", "dluoFamille": "maigre-vegetal", "dluoLipides": "lt2", "ratio": "—", "eau": "variable", "cycle": "2–10 j", "aw": "n/a", "procede": "Lyophilisation", "procedeWhy": "Le séchage sous vide retire l'eau sans gondoler ni coller les pages, et bloque la moisissure.", "pieges": ["Congeler immédiatement, ne pas tenter de sécher à l'air.", "Agir vite : la moisissure démarre en 48 h."], "dluoTxt": "Restauration définitive ; conservation ensuite selon l'archivage.", "applications": ["Livres et archives", "Actes notariés, dossiers médicaux", "Photographies, plans"], "related": ["bouquet-mariee", "fleur", "echantillon-labo"] },
-  { "slug": "placenta", "titre": "Lyophiliser un placenta", "nom": "placenta", "nomDe": "du placenta", "famille": "special", "dluoFamille": "carne", "dluoLipides": "m2a10", "ratio": "4:1", "eau": "80 %", "cycle": "24–36 h", "aw": "0,20–0,30", "procede": "Lyophilisation", "procedeWhy": "Préserve les composés sans chaleur, dans un cadre d'hygiène strict, pour l'encapsulation.", "pieges": ["Protocole d'hygiène et traçabilité stricts.", "Chaîne du froid impérative avant traitement."], "dluoTxt": "12 à 24 mois en gélules, à l'abri de l'humidité.", "applications": ["Encapsulation (placentophagie)", "Conservation personnelle"], "related": ["colostrum", "foie-volaille", "echantillon-labo"] },
-  { "slug": "echantillon-labo", "titre": "Lyophiliser des échantillons de laboratoire", "nom": "échantillon de laboratoire", "nomDe": "de l'échantillon de laboratoire", "famille": "special", "dluoFamille": "ferment", "dluoLipides": "lt2", "ratio": "—", "eau": "variable", "cycle": "variable", "aw": "0,05–0,20", "procede": "Lyophilisation", "procedeWhy": "Stabilise durablement souches, réactifs et échantillons biologiques sans chaîne du froid.", "pieges": ["Cryoprotecteurs et protocole adaptés à chaque échantillon.", "aw très basse et traçabilité complète."], "dluoTxt": "Plusieurs années en flacon scellé sous vide ou azote.", "applications": ["Souches et ferments de collection", "Réactifs stabilisés", "Échantillothèque de référence"], "related": ["levain", "kefir", "kombucha", "colostrum"] }
+  {
+    "slug": "huitre",
+    "titre": "Lyophiliser des huîtres",
+    "nom": "huître",
+    "nomDe": "de l'huître",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "85 %",
+    "cycle": "24–36 h",
+    "aw": "0,30–0,50",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Chair fragile et iodée : seul le froid préserve la texture et les arômes marins.",
+    "pieges": [
+      "Congeler très vite pour éviter les cristaux qui déchirent la chair.",
+      "Produit gras : ne pas sur-sécher, viser aw 0,30–0,50."
+    ],
+    "dluoTxt": "5 à 9 mois en sachet, 12 à 18 mois en barrière azotée.",
+    "applications": [
+      "Snack marin haut de gamme",
+      "Poudre d'huître pour la gastronomie",
+      "Garniture instantanée"
+    ],
+    "related": [
+      "moule",
+      "oursin",
+      "saint-jacques",
+      "crevette",
+      "encornet"
+    ],
+    "intro": "L'huître crue ne se garde que quelques jours et supporte mal le transport. La lyophilisation la transforme en poudre ou en chip stable plusieurs mois, qui concentre l'iode, le glutamate et les notes marines sans aucune cuisson. C'est un ingrédient de la mer haut de gamme pour la gastronomie, le snacking et l'assaisonnement.",
+    "comportement": "La chair d'huître contient 80 à 85 % d'eau, du glycogène et une forte proportion d'acides aminés libres — dont le glutamate, responsable de l'umami. Sa structure musculaire est fine et le manteau très délicat, ce qui impose une congélation rapide : de gros cristaux de glace déchireraient les fibres et rendraient la chair filandreuse à la réhydratation.\n\nÀ la sublimation, le front de séchage progresse vite car l'épaisseur utile est faible (3 à 6 mm une fois la chair étalée). La difficulté vient de la liqueur interne salée : le sel abaisse le point de congélation et allonge la phase de congélation. Côté chimie, les lipides ne représentent que 1 à 2 %, mais ils sont très riches en oméga-3 et l'huître contient du cuivre et du fer, deux catalyseurs d'oxydation : la fraction grasse rancit donc vite si on la laisse exposée. Le glutamate et le glycogène, eux, traversent bien le procédé.",
+    "parametres": "Rincer l'excès de liqueur salée avant traitement, puis congeler rapidement à −30 voire −40 °C pour obtenir de petits cristaux. Étaler la chair en couche fine et régulière plutôt que de l'empiler : une couche épaisse crée un gradient et laisse un cœur humide. En sublimation primaire, une clayette de 20 à 25 °C convient ; on enchaîne sur un palier secondaire plus long pour faire descendre l'a_w.\n\nLe critère d'arrêt vise une a_w de 0,30 à 0,50. C'est un produit à fraction grasse oxydable : on ne cherche pas la sécheresse maximale, qui accélérerait le rancissement des oméga-3 sans gagner en stabilité. Un contrôle d'a_w en fin de cycle sécurise le lot.",
+    "variantes": "Le calibre change tout : une n° 2 charnue met plus de temps qu'une n° 4, à couche égale. L'huître creuse et l'huître plate n'ont ni la même teneur en eau ni la même tenue. La saison pèse lourd : en été, l'huître « laiteuse » (laitance) est plus grasse, plus fragile et plus sujette à l'oxydation, tandis qu'une huître affinée en claire l'hiver donne un résultat plus net. Enfin la provenance (Marennes-Oléron, Normandie, Bretagne) modifie la salinité, donc la durée de congélation à prévoir.",
+    "conservation": "Le facteur limitant réel est l'oxydation lipidique, amplifiée par le cuivre et le fer de la chair. C'est un produit dont l'a_w cible se situe entre 0,30 et 0,50 : en dessous de 0,30, on retire la monocouche d'eau qui protège les lipides et le rancissement s'accélère — on perd de la DLUO tout en dépensant du cycle. Comptez 5 à 9 mois en sachet standard, et 12 à 18 mois en barrière EVOH ou aluminium avec inertage azote et absorbeur d'oxygène. Un stockage au frais allonge nettement la conservation (la vitesse d'oxydation double environ tous les 10 °C), et une barrière opaque protège de la lumière.",
+    "comparaison": "Au séchage à l'air chaud, l'huître cuit : elle durcit, prend un goût de poisson séché et perd sa fraîcheur iodée — inutilisable en gastronomie. Le séchage micro-ondes sous vide peut convenir pour une poudre à gros volume, mais le front chaud dégrade une partie des oméga-3 et des arômes volatils. Pour une chair entière qui se réhydrate et garde son profil marin, la lyophilisation reste supérieure : c'est le seul procédé qui préserve à la fois texture et goût.",
+    "debouches": "Poudre d'huître pour chefs (sauces, beurres composés, dressage), chips iodées en apéritif premium, snack marin protéiné, base de bouillon concentré, inclusions pour épiceries fines. Les clients types sont les restaurateurs gastronomiques, les marques de snacking marin et les ostréiculteurs qui veulent valoriser les invendus frais.",
+    "faq": [
+      {
+        "q": "Faut-il cuire l'huître avant de la lyophiliser ?",
+        "a": "Non, on la traite crue : c'est tout l'intérêt, on conserve le profil aromatique de l'huître fraîche sans cuisson."
+      },
+      {
+        "q": "Combien d'huîtres pour 100 g de poudre ?",
+        "a": "Le ratio frais vers sec est d'environ 6:1, donc il faut à peu près 600 g de chair pour 100 g de produit sec, soit une bonne douzaine d'huîtres selon le calibre."
+      },
+      {
+        "q": "L'huître lyophilisée se réhydrate-t-elle ?",
+        "a": "Partiellement : la chair regonfle et retrouve du moelleux, sans redevenir tout à fait identique à l'huître vivante. En poudre, on l'utilise le plus souvent telle quelle."
+      },
+      {
+        "q": "Perd-elle son goût iodé ?",
+        "a": "Au contraire, il est concentré. Le glutamate et les composés iodés se retrouvent dans une masse plus faible, ce qui intensifie l'umami marin."
+      },
+      {
+        "q": "Peut-on la conserver à température ambiante ?",
+        "a": "Oui, à condition d'un bon conditionnement : sachet barrière, idéalement avec azote et absorbeur d'oxygène, car la fraction grasse est sensible à l'oxydation."
+      },
+      {
+        "q": "Quel calibre choisir ?",
+        "a": "Les calibres moyens (n° 3) offrent un bon compromis entre rendement et régularité de séchage. Les très grosses demandent un cycle plus long à couche fine."
+      },
+      {
+        "q": "Est-ce sûr sur le plan sanitaire ?",
+        "a": "La chaîne du froid avant traitement et le procédé sous vide sont maîtrisés. Comme pour tout produit de la mer, la fraîcheur de départ et la traçabilité sont déterminantes."
+      }
+    ]
+  },
+  {
+    "slug": "moule",
+    "titre": "Lyophiliser des moules",
+    "nom": "moule",
+    "nomDe": "de la moule",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "lt2",
+    "ratio": "5:1",
+    "eau": "80 %",
+    "cycle": "24–30 h",
+    "aw": "0,30–0,50",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve la couleur orangée et le goût sans cuisson agressive.",
+    "pieges": [
+      "Décoquiller et rincer le sable avant congélation.",
+      "Reprend vite l'humidité : conditionnement barrière conseillé."
+    ],
+    "dluoTxt": "6 à 10 mois en sachet, jusqu'à 18 mois en barrière azotée.",
+    "applications": [
+      "Soupes et paëllas instantanées",
+      "Poudre umami marine",
+      "En-cas protéiné"
+    ],
+    "related": [
+      "huitre",
+      "crevette",
+      "encornet",
+      "saint-jacques",
+      "coproduits-poisson"
+    ]
+  },
+  {
+    "slug": "oursin",
+    "titre": "Lyophiliser des oursins",
+    "nom": "oursin",
+    "nomDe": "de l'oursin",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "m2a10",
+    "ratio": "5:1",
+    "eau": "78 %",
+    "cycle": "28–40 h",
+    "aw": "0,30–0,50",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Gonades très délicates et grasses : le froid seul évite le rancissement du goût.",
+    "pieges": [
+      "Manipuler la langue d'oursin sans l'écraser.",
+      "Riche en lipides : oxydation rapide sans barrière azotée."
+    ],
+    "dluoTxt": "4 à 7 mois en sachet, 10 à 15 mois en barrière azotée.",
+    "applications": [
+      "Poudre d'oursin de chef",
+      "Assaisonnement iodé premium"
+    ],
+    "related": [
+      "huitre",
+      "saint-jacques",
+      "moule",
+      "encornet"
+    ]
+  },
+  {
+    "slug": "crevette",
+    "titre": "Lyophiliser des crevettes",
+    "nom": "crevette",
+    "nomDe": "de la crevette",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "lt2",
+    "ratio": "5:1",
+    "eau": "78 %",
+    "cycle": "24–30 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Réhydratation quasi à l'identique, texture et couleur préservées.",
+    "pieges": [
+      "Décortiquer avant traitement pour une réhydratation homogène.",
+      "Éviter la sur-cuisson préalable qui durcit la chair."
+    ],
+    "dluoTxt": "8 à 12 mois en sachet, plus en barrière azotée.",
+    "applications": [
+      "Plats lyophilisés de randonnée",
+      "Nouilles et soupes instantanées",
+      "Snack protéiné"
+    ],
+    "related": [
+      "moule",
+      "huitre",
+      "encornet",
+      "saint-jacques"
+    ]
+  },
+  {
+    "slug": "saint-jacques",
+    "titre": "Lyophiliser des saint-jacques",
+    "nom": "noix de saint-jacques",
+    "nomDe": "de la saint-jacques",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "lt2",
+    "ratio": "5:1",
+    "eau": "78 %",
+    "cycle": "26–34 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Noix noble et sucrée : le froid conserve le moelleux à la réhydratation.",
+    "pieges": [
+      "Séparer noix et corail, sensibilités différentes.",
+      "Congélation lente = perte d'eau à la réhydratation."
+    ],
+    "dluoTxt": "8 à 12 mois en sachet.",
+    "applications": [
+      "Gastronomie instantanée",
+      "Poudre d'assaisonnement fin"
+    ],
+    "related": [
+      "huitre",
+      "crevette",
+      "moule",
+      "oursin"
+    ]
+  },
+  {
+    "slug": "wakame",
+    "titre": "Lyophiliser de l'algue wakamé",
+    "nom": "algue wakamé",
+    "nomDe": "du wakamé",
+    "famille": "marin",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "8:1",
+    "eau": "88 %",
+    "cycle": "18–26 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Conserve la couleur verte et les minéraux marins, réhydratation immédiate.",
+    "pieges": [
+      "Bien rincer le sel avant traitement.",
+      "Produit maigre : viser une aw basse pour une longue conservation."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet.",
+    "applications": [
+      "Salades et soupes instantanées",
+      "Poudre d'algue riche en iode"
+    ],
+    "related": [
+      "spiruline",
+      "chlorella",
+      "huitre",
+      "coproduits-poisson"
+    ]
+  },
+  {
+    "slug": "spiruline",
+    "titre": "Lyophiliser de la spiruline",
+    "nom": "spiruline",
+    "nomDe": "de la spiruline",
+    "famille": "marin",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "80 %",
+    "cycle": "20–30 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Le froid préserve la phycocyanine, les protéines et les antioxydants mieux que le séchage à chaud.",
+    "pieges": [
+      "Éviter toute montée en température qui dégrade la couleur bleu-vert.",
+      "Conditionner à l'abri de la lumière et de l'oxygène."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Paillettes et poudre premium",
+      "Compléments alimentaires",
+      "Colorant naturel"
+    ],
+    "related": [
+      "chlorella",
+      "wakame",
+      "kombucha",
+      "matcha-the"
+    ]
+  },
+  {
+    "slug": "chlorella",
+    "titre": "Lyophiliser de la chlorella",
+    "nom": "chlorella",
+    "nomDe": "de la chlorella",
+    "famille": "marin",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "80 %",
+    "cycle": "20–30 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve chlorophylle et parois cellulaires actives.",
+    "pieges": [
+      "Paroi cellulaire : préciser si un broyage est attendu.",
+      "Sensible à l'oxydation, prévoir une barrière."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Compléments détox",
+      "Poudre nutritionnelle premium"
+    ],
+    "related": [
+      "spiruline",
+      "wakame",
+      "matcha-the"
+    ]
+  },
+  {
+    "slug": "encornet",
+    "titre": "Lyophiliser de l'encornet",
+    "nom": "encornet",
+    "nomDe": "de l'encornet",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "lt2",
+    "ratio": "5:1",
+    "eau": "80 %",
+    "cycle": "24–32 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Chair maigre qui se réhydrate bien pour la cuisine instantanée.",
+    "pieges": [
+      "Trancher finement pour un séchage homogène.",
+      "Éviter le collapse des anneaux épais."
+    ],
+    "dluoTxt": "8 à 12 mois en sachet.",
+    "applications": [
+      "Plats marins instantanés",
+      "Snack protéiné"
+    ],
+    "related": [
+      "crevette",
+      "moule",
+      "huitre",
+      "saint-jacques"
+    ]
+  },
+  {
+    "slug": "coproduits-poisson",
+    "titre": "Lyophiliser des coproduits de poisson",
+    "nom": "coproduits de poisson",
+    "nomDe": "des coproduits de poisson",
+    "famille": "marin",
+    "dluoFamille": "marin-gras",
+    "dluoLipides": "gt10",
+    "ratio": "4:1",
+    "eau": "72 %",
+    "cycle": "28–40 h",
+    "aw": "0,30–0,50",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Valorise têtes, parures et arêtes en poudre riche ; le froid limite l'oxydation des lipides marins.",
+    "pieges": [
+      "Très gras : oxydation rapide, barrière azotée + absorbeur indispensables.",
+      "Ne pas sur-sécher : optimum de stabilité vers aw 0,30–0,50."
+    ],
+    "dluoTxt": "5 à 9 mois en sachet, 12 à 18 mois en barrière azotée (repère saumon : ~155 j en PLA à 20 °C).",
+    "applications": [
+      "Poudre riche en oméga-3",
+      "Base de bouillon",
+      "Petfood premium"
+    ],
+    "related": [
+      "huitre",
+      "moule",
+      "oursin",
+      "wakame"
+    ]
+  },
+  {
+    "slug": "fraise",
+    "titre": "Lyophiliser des fraises",
+    "nom": "fraise",
+    "nomDe": "de la fraise",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "10:1",
+    "eau": "91 %",
+    "cycle": "24–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Croquant fondant, couleur et vitamines préservées : la référence du fruit lyophilisé.",
+    "pieges": [
+      "Trancher pour un séchage régulier.",
+      "Hygroscopique : refermer vite, conditionnement barrière."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Céréales et barres",
+      "Chocolaterie et pâtisserie",
+      "En-cas sain"
+    ],
+    "related": [
+      "framboise",
+      "myrtille",
+      "banane",
+      "mangue",
+      "pomme"
+    ],
+    "intro": "La fraise est un fruit magnifique et terriblement périssable : 91 % d'eau, quelques jours de tenue. Lyophilisée, elle devient un morceau croquant qui fond en bouche, garde sa couleur rouge vive et l'essentiel de sa vitamine C. C'est la référence absolue du fruit lyophilisé, celle par laquelle beaucoup découvrent le procédé.",
+    "comportement": "Avec 90 à 91 % d'eau, la fraise est faite d'une chair alvéolaire ponctuée d'akènes en surface, riche en pectines, en sucres simples (5 à 7 % de fructose et glucose) et en anthocyanes qui portent la couleur. À la congélation, l'eau forme des cristaux dans les alvéoles ; à la sublimation, ces vides deviennent une structure poreuse et aérée — c'est ce qui donne le croquant caractéristique.\n\nLe point sensible est le sucre : sa température de transition vitreuse est basse, et une rampe de température trop rapide en séchage primaire provoque un effondrement (collapse) — le morceau se tasse au lieu de rester gonflé. Les akènes, eux, restent croquants et bien visibles. La couleur est remarquablement préservée parce que le procédé n'apporte pas de chaleur qui brunirait le fruit.",
+    "parametres": "Trancher en épaisseur régulière de 5 à 8 mm : au-delà, le cœur reste humide ; en dessous, le fruit devient trop fragile. Congeler à −30 °C. En primaire, privilégier une montée en température lente et une clayette modérée pour éviter le collapse des sucres. La fraise étant un produit maigre sans lipides à protéger, on peut viser une a_w basse, de 0,20 à 0,30 : descendre est ici favorable à la stabilité, contrairement aux produits gras. Le critère d'arrêt se cale sur une a_w inférieure ou égale à 0,30 et un morceau qui « sonne » sec et cassant.",
+    "variantes": "La variété change le résultat : une Gariguette allongée sèche différemment d'une Charlotte ronde, et une Mara des Bois, plus parfumée mais plus gorgée d'eau, demande un cycle un peu plus long. La maturité est décisive : trop mûre, la fraise est plus sucrée et collapse plus facilement ; sous-mûre, elle manque d'arôme et reste acide. Entière, tranchée ou en poudre, le procédé s'adapte, la tranche donnant le meilleur croquant. La saison et l'origine (plein champ vs hors-sol) modulent la teneur en eau de départ.",
+    "conservation": "La fraise est un produit maigre : son facteur limitant n'est pas l'oxydation des graisses mais la reprise d'humidité et, à la marge, la dégradation des anthocyanes sous l'effet de la lumière et de l'oxygène. Une a_w basse lui est donc favorable, sans le risque de rancissement propre aux produits gras. Extrêmement hygroscopique, elle se ré-humidifie en quelques minutes à l'air : il faut refermer vite et conditionner en sachet barrière, de préférence opaque. Comptez 12 à 24 mois en barrière, à température ambiante, à l'abri de la lumière.",
+    "comparaison": "Au séchage à l'air chaud, la fraise brunit, durcit et son sucre caramélise : on obtient un fruit sec dense, loin du croquant recherché. Le micro-ondes sous vide fait mieux mais peine à préserver la couleur et la vitamine C aussi bien que le froid. La lyophilisation gagne sur tous les tableaux — couleur, arômes, texture aérée — ce qui explique qu'elle soit devenue le standard du fruit premium pour l'inclusion.",
+    "debouches": "Barres de céréales et mueslis, chocolaterie (inclusions et enrobage), poudre aromatique et colorante naturelle, décor de pâtisserie, en-cas sain pour enfants. Les acheteurs types sont les chocolatiers, les marques de snacking et de petit-déjeuner, et les pâtissiers.",
+    "faq": [
+      {
+        "q": "Quel est le ratio de la fraise lyophilisée ?",
+        "a": "Environ 10:1 : il faut à peu près 1 kg de fraises fraîches pour 100 g de fraises lyophilisées, la fraise étant très riche en eau."
+      },
+      {
+        "q": "Garde-t-elle sa couleur rouge ?",
+        "a": "Oui, très bien : l'absence de chaleur préserve les anthocyanes. La couleur reste vive, surtout en conditionnement opaque."
+      },
+      {
+        "q": "La vitamine C est-elle conservée ?",
+        "a": "En grande partie : le séchage à froid la préserve bien mieux qu'un séchage à chaud, qui en détruit une part importante."
+      },
+      {
+        "q": "Le résultat est-il croquant ou mou ?",
+        "a": "Croquant puis fondant : la structure poreuse craque sous la dent avant de fondre. Un morceau mou signale une reprise d'humidité ou un léger collapse."
+      },
+      {
+        "q": "Entière ou tranchée ?",
+        "a": "La tranche de 5 à 8 mm donne le meilleur croquant et un séchage homogène ; l'entière est possible mais plus longue."
+      },
+      {
+        "q": "Peut-on la réhydrater ?",
+        "a": "Oui, partiellement, pour des coulis ou des garnitures. La plupart des usages la gardent sèche, pour le croquant."
+      },
+      {
+        "q": "Combien de temps se conserve-t-elle ?",
+        "a": "12 à 24 mois en sachet barrière opaque à température ambiante. Une fois ouvert, il faut refermer vite car elle reprend l'humidité en minutes."
+      },
+      {
+        "q": "Faut-il ajouter du sucre ?",
+        "a": "Non : la lyophilisation concentre le sucre naturel du fruit. Aucun ajout n'est nécessaire."
+      }
+    ]
+  },
+  {
+    "slug": "framboise",
+    "titre": "Lyophiliser des framboises",
+    "nom": "framboise",
+    "nomDe": "de la framboise",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "9:1",
+    "eau": "86 %",
+    "cycle": "24–34 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Arôme intense et couleur vive conservés, structure fragile respectée.",
+    "pieges": [
+      "Fruit fragile : manipulation douce après séchage.",
+      "Les akènes restent croquants, le préciser."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Poudre aromatique",
+      "Décor pâtisserie",
+      "Granola premium"
+    ],
+    "related": [
+      "fraise",
+      "myrtille",
+      "banane",
+      "mangue"
+    ]
+  },
+  {
+    "slug": "myrtille",
+    "titre": "Lyophiliser des myrtilles",
+    "nom": "myrtille",
+    "nomDe": "de la myrtille",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "8:1",
+    "eau": "84 %",
+    "cycle": "26–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Peau cireuse : préserve anthocyanes et antioxydants sans chaleur.",
+    "pieges": [
+      "Inciser ou pré-traiter la peau pour accélérer le séchage.",
+      "Sucre élevé : éviter le collapse par séchage trop rapide."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Snack antioxydant",
+      "Muesli et barres",
+      "Poudre colorante naturelle"
+    ],
+    "related": [
+      "fraise",
+      "framboise",
+      "banane",
+      "pomme"
+    ]
+  },
+  {
+    "slug": "banane",
+    "titre": "Lyophiliser des bananes",
+    "nom": "banane",
+    "nomDe": "de la banane",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "4:1",
+    "eau": "74 %",
+    "cycle": "24–34 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Chips fondantes et sucrées, sans huile ni brunissement.",
+    "pieges": [
+      "Brunissement enzymatique : traiter et congeler vite.",
+      "Trancher régulièrement pour un séchage homogène."
+    ],
+    "dluoTxt": "12 à 18 mois en sachet barrière.",
+    "applications": [
+      "Chips de fruit",
+      "Poudre pour smoothies",
+      "Alimentation infantile"
+    ],
+    "related": [
+      "mangue",
+      "pomme",
+      "fraise",
+      "myrtille"
+    ]
+  },
+  {
+    "slug": "mangue",
+    "titre": "Lyophiliser des mangues",
+    "nom": "mangue",
+    "nomDe": "de la mangue",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "7:1",
+    "eau": "83 %",
+    "cycle": "26–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Concentre le sucre et l'arôme tropical, couleur orangée intacte.",
+    "pieges": [
+      "Très sucrée : risque de collapse, cycle maîtrisé.",
+      "Trancher en épaisseur régulière."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Snack tropical",
+      "Poudre aromatique",
+      "Pâtisserie"
+    ],
+    "related": [
+      "banane",
+      "fraise",
+      "framboise",
+      "pomme"
+    ]
+  },
+  {
+    "slug": "pomme",
+    "titre": "Lyophiliser des pommes",
+    "nom": "pomme",
+    "nomDe": "de la pomme",
+    "famille": "fruits",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "8:1",
+    "eau": "85 %",
+    "cycle": "22–32 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Croquant aérien, goût concentré, sans additif.",
+    "pieges": [
+      "Brunissement : ajout d'acide ascorbique possible.",
+      "Trancher fin pour un croquant homogène."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Chips de pomme",
+      "Compotes instantanées",
+      "Céréales"
+    ],
+    "related": [
+      "banane",
+      "mangue",
+      "fraise",
+      "myrtille"
+    ]
+  },
+  {
+    "slug": "tomate",
+    "titre": "Lyophiliser des tomates",
+    "nom": "tomate",
+    "nomDe": "de la tomate",
+    "famille": "legumes",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "16:1",
+    "eau": "94 %",
+    "cycle": "26–38 h",
+    "aw": "0,20–0,30",
+    "procede": "Micro-ondes sous vide",
+    "procedeWhy": "Pour de la poudre à longue DLUO au meilleur coût, le micro-ondes sous vide suffit ; réservez la lyophilisation aux pétales de chef.",
+    "pieges": [
+      "Très riche en eau : rendement faible, prévoir le volume.",
+      "Sucre + acidité : surveiller le brunissement."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Poudre d'assaisonnement",
+      "Soupes instantanées",
+      "Pétales de chef (en lyophilisation)"
+    ],
+    "related": [
+      "betterave",
+      "epinard",
+      "pomme",
+      "champignon-paris"
+    ]
+  },
+  {
+    "slug": "betterave",
+    "titre": "Lyophiliser de la betterave",
+    "nom": "betterave",
+    "nomDe": "de la betterave",
+    "famille": "legumes",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "9:1",
+    "eau": "87 %",
+    "cycle": "24–34 h",
+    "aw": "0,20–0,30",
+    "procede": "Micro-ondes sous vide",
+    "procedeWhy": "Poudre colorante à fort volume : le micro-ondes sous vide offre la meilleure DLUO au coût le plus bas.",
+    "pieges": [
+      "Colorant tenace : dédier le matériel.",
+      "La bétalaïne est thermosensible : maîtriser la température."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière opaque.",
+    "applications": [
+      "Colorant rose naturel",
+      "Poudre nutritionnelle",
+      "Boulangerie"
+    ],
+    "related": [
+      "tomate",
+      "epinard",
+      "curcuma",
+      "pomme"
+    ]
+  },
+  {
+    "slug": "epinard",
+    "titre": "Lyophiliser des épinards",
+    "nom": "épinard",
+    "nomDe": "de l'épinard",
+    "famille": "legumes",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "14:1",
+    "eau": "92 %",
+    "cycle": "20–30 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Conserve la couleur verte et les vitamines, réhydratation immédiate.",
+    "pieges": [
+      "Feuille fine : séchage rapide mais fragile.",
+      "Rendement faible, prévoir le volume."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Poudre verte",
+      "Plats instantanés",
+      "Smoothies"
+    ],
+    "related": [
+      "betterave",
+      "tomate",
+      "basilic",
+      "menthe"
+    ]
+  },
+  {
+    "slug": "champignon-paris",
+    "titre": "Lyophiliser des champignons de Paris",
+    "nom": "champignon de Paris",
+    "nomDe": "du champignon de Paris",
+    "famille": "champignons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "10:1",
+    "eau": "90 %",
+    "cycle": "22–32 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Réhydratation quasi à l'identique, umami concentré.",
+    "pieges": [
+      "Brunissement rapide : traiter frais.",
+      "Trancher régulièrement."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Poudre umami",
+      "Sauces et risottos instantanés"
+    ],
+    "related": [
+      "cepe",
+      "truffe",
+      "epinard",
+      "tomate"
+    ]
+  },
+  {
+    "slug": "cepe",
+    "titre": "Lyophiliser des cèpes",
+    "nom": "cèpe",
+    "nomDe": "du cèpe",
+    "famille": "champignons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "9:1",
+    "eau": "88 %",
+    "cycle": "24–34 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve l'arôme boisé intense, très supérieur au séchage à chaud.",
+    "pieges": [
+      "Vérifier l'absence de vers avant traitement.",
+      "Arôme volatil : conditionner à l'abri de l'air."
+    ],
+    "dluoTxt": "12 à 24 mois en sachet barrière.",
+    "applications": [
+      "Poudre aromatique de chef",
+      "Bouillons premium",
+      "Risottos"
+    ],
+    "related": [
+      "champignon-paris",
+      "truffe",
+      "epinard"
+    ]
+  },
+  {
+    "slug": "truffe",
+    "titre": "Lyophiliser de la truffe",
+    "nom": "truffe",
+    "nomDe": "de la truffe",
+    "famille": "champignons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "4:1",
+    "eau": "72 %",
+    "cycle": "26–36 h",
+    "aw": "0,20–0,35",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Fixe des arômes très volatils et fragiles impossibles à conserver autrement.",
+    "pieges": [
+      "Arômes extrêmement volatils : cycle et conditionnement soignés.",
+      "Produit à forte valeur : traçabilité renforcée."
+    ],
+    "dluoTxt": "12 à 18 mois en barrière hermétique.",
+    "applications": [
+      "Poudre de truffe",
+      "Assaisonnement gastronomique"
+    ],
+    "related": [
+      "cepe",
+      "champignon-paris"
+    ]
+  },
+  {
+    "slug": "foie-volaille",
+    "titre": "Lyophiliser du foie de volaille",
+    "nom": "foie de volaille",
+    "nomDe": "du foie de volaille",
+    "famille": "carne",
+    "dluoFamille": "carne",
+    "dluoLipides": "m2a10",
+    "ratio": "4:1",
+    "eau": "72 %",
+    "cycle": "26–36 h",
+    "aw": "0,30–0,40",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Concentre les protéines et le fer, très appétent pour le petfood premium.",
+    "pieges": [
+      "Produit gras : barrière azotée conseillée.",
+      "Chaîne du froid stricte avant traitement."
+    ],
+    "dluoTxt": "8 à 14 mois en barrière azotée.",
+    "applications": [
+      "Friandises pour animaux premium",
+      "Poudre protéinée",
+      "Compléments"
+    ],
+    "related": [
+      "foie-gras",
+      "oeuf",
+      "colostrum",
+      "placenta"
+    ]
+  },
+  {
+    "slug": "foie-gras",
+    "titre": "Lyophiliser du foie gras",
+    "nom": "foie gras",
+    "nomDe": "du foie gras",
+    "famille": "carne",
+    "dluoFamille": "carne",
+    "dluoLipides": "gt10",
+    "ratio": "3:1",
+    "eau": "60 %",
+    "cycle": "30–44 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Produit très gras et noble : le froid préserve le fondant, le chaud le ferait fondre.",
+    "pieges": [
+      "Très riche en lipides : oxydation rapide, barrière + absorbeur indispensables.",
+      "Ne pas sur-sécher, optimum vers aw 0,30–0,45."
+    ],
+    "dluoTxt": "4 à 8 mois en sachet, 10 à 15 mois en barrière azotée + absorbeur.",
+    "applications": [
+      "Copeaux et poudre de chef",
+      "Assaisonnement gastronomique"
+    ],
+    "related": [
+      "foie-volaille",
+      "oeuf",
+      "truffe"
+    ],
+    "intro": "Le foie gras est un produit noble, cher et fragile, que la chaleur ferait fondre. La lyophilisation en fait des copeaux ou une poudre qui gardent son fondant et sa richesse aromatique, à conserver hors du frais. C'est un ingrédient gastronomique de haute valeur, réservé aux chefs et au snacking premium.",
+    "comportement": "Le foie gras est atypique : environ 50 à 55 % d'eau seulement, mais plus de 40 % de lipides. Ses graisses fondent dès 25 à 35 °C, ce qui interdit tout séchage à chaud — le produit coulerait. Le froid est donc impératif. À la congélation, la matrice se fige ; à la sublimation, l'eau part mais les lipides restent en place, désormais exposés : le produit devient très oxydable, et la texture, une fois l'eau retirée, est friable.\n\nLa faible teneur en eau signifie qu'il y a peu à sublimer, mais cette eau est piégée dans une matrice grasse qui ralentit sa migration. On travaille donc à couche fine et à basse température de clayette pour ne jamais approcher le point de fusion des graisses. Le sel et les assaisonnements présents modifient légèrement le comportement thermique.",
+    "parametres": "Partir d'un mi-cuit tranché à environ 5 mm : c'est le meilleur compromis entre tenue et rapidité. Congeler à −35 °C. En sublimation, garder une clayette basse — ne pas dépasser 25 à 30 °C — pour éviter toute fusion lipidique qui ruinerait le lot. L'a_w cible se situe entre 0,30 et 0,45. C'est un produit très gras : on ne sur-sèche pas. En dessous d'a_w 0,30, on retire la monocouche d'eau protectrice et le rancissement s'emballe. Le critère d'arrêt privilégie donc la stabilité oxydative à la sécheresse maximale.",
+    "variantes": "Cru, mi-cuit ou cuit, le comportement diffère : le mi-cuit offre le meilleur résultat, le cru étant plus délicat à stabiliser. Le foie d'oie, plus fin et plus gras, se distingue du foie de canard, plus courant et plus marqué en goût. L'assaisonnement (sel, poivre, éventuel alcool comme l'armagnac) influe sur la texture finale et la conservation. Le calibre et la teneur en gras du lobe modulent la durée de cycle.",
+    "conservation": "Ici, le facteur limitant est sans ambiguïté l'oxydation lipidique, à cause des plus de 40 % de graisses exposées. Le conditionnement barrière avec inertage azote et absorbeur d'oxygène n'est pas une option mais une nécessité. Comptez 4 à 8 mois en sachet simple — court — et 10 à 15 mois en barrière azotée avec absorbeur. Le stockage au frais est fortement recommandé : la vitesse d'oxydation doublant environ tous les 10 °C, quelques degrés en moins prolongent nettement la DLUO. Rappel : ne jamais viser une a_w inférieure à 0,30, qui accélérerait le rancissement.",
+    "comparaison": "Aucun séchage à chaud n'est envisageable : à l'air chaud comme au micro-ondes sous vide, les graisses fondent et le produit prend un goût cuit, perdant tout ce qui fait le foie gras. La lyophilisation est la seule voie qui conserve le fondant et le profil aromatique. C'est un cas où le surcoût énergétique du froid est pleinement justifié par la valeur du produit.",
+    "debouches": "Copeaux et poudre de foie gras pour le dressage et l'assaisonnement gastronomique, garnitures de fêtes, inclusions dans des snacks très premium, tuiles et crumbles salés. La clientèle type est la restauration gastronomique, les traiteurs haut de gamme et les épiceries fines.",
+    "faq": [
+      {
+        "q": "Pourquoi ne pas sécher le foie gras à chaud ?",
+        "a": "Parce que ses graisses fondent dès 25 à 35 °C : au chaud, il coule et prend un goût cuit. Seul le froid préserve le fondant."
+      },
+      {
+        "q": "Le foie gras lyophilisé fond-il en bouche ?",
+        "a": "Oui : la matrice grasse, une fois l'eau retirée, redonne cette sensation fondante caractéristique, sous forme de copeaux ou de poudre."
+      },
+      {
+        "q": "Quelle est sa durée de conservation ?",
+        "a": "4 à 8 mois en sachet simple, mais 10 à 15 mois en barrière azotée avec absorbeur d'oxygène, à cause de sa très forte teneur en lipides."
+      },
+      {
+        "q": "Faut-il un conditionnement particulier ?",
+        "a": "Oui, impérativement : barrière EVOH ou aluminium, azote et absorbeur d'oxygène. Sans cela, l'oxydation est rapide."
+      },
+      {
+        "q": "Cru ou mi-cuit ?",
+        "a": "Le mi-cuit donne le meilleur résultat et la meilleure tenue. Le cru est possible mais plus délicat à stabiliser."
+      },
+      {
+        "q": "Peut-on le stocker à température ambiante ?",
+        "a": "Oui en barrière, mais un stockage au frais prolonge nettement la DLUO, car il ralentit l'oxydation des graisses."
+      },
+      {
+        "q": "Foie de canard ou d'oie ?",
+        "a": "Les deux se lyophilisent ; l'oie, plus fine et plus grasse, demande une vigilance accrue sur l'oxydation."
+      }
+    ]
+  },
+  {
+    "slug": "oeuf",
+    "titre": "Lyophiliser des œufs",
+    "nom": "œuf",
+    "nomDe": "de l'œuf",
+    "famille": "carne",
+    "dluoFamille": "carne",
+    "dluoLipides": "m2a10",
+    "ratio": "4:1",
+    "eau": "75 %",
+    "cycle": "26–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Poudre d'œuf entier réhydratable, protéines préservées.",
+    "pieges": [
+      "Battre et pasteuriser avant traitement (sécurité sanitaire).",
+      "Le jaune, gras, oxyde : barrière conseillée."
+    ],
+    "dluoTxt": "10 à 18 mois en barrière.",
+    "applications": [
+      "Poudre d'œuf de randonnée",
+      "Boulangerie et pâtisserie",
+      "Protéines"
+    ],
+    "related": [
+      "foie-volaille",
+      "colostrum",
+      "fromage"
+    ]
+  },
+  {
+    "slug": "colostrum",
+    "titre": "Lyophiliser du colostrum",
+    "nom": "colostrum",
+    "nomDe": "du colostrum",
+    "famille": "laitier",
+    "dluoFamille": "poudre-laitiere",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "80 %",
+    "cycle": "28–40 h",
+    "aw": "0,10–0,25",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve les immunoglobulines thermosensibles, détruites par le séchage à chaud.",
+    "pieges": [
+      "Chaleur interdite : molécules bioactives fragiles.",
+      "aw très basse requise pour la stabilité."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière opaque.",
+    "applications": [
+      "Compléments immunitaires",
+      "Nutrition sportive premium"
+    ],
+    "related": [
+      "kefir",
+      "yaourt",
+      "fromage",
+      "oeuf"
+    ]
+  },
+  {
+    "slug": "kefir",
+    "titre": "Lyophiliser du kéfir",
+    "nom": "kéfir",
+    "nomDe": "du kéfir",
+    "famille": "laitier",
+    "dluoFamille": "ferment",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "88 %",
+    "cycle": "26–38 h",
+    "aw": "0,10–0,20",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Maintient les ferments vivants : la lyophilisation est la seule voie de conservation durable.",
+    "pieges": [
+      "Ajout de cryoprotecteurs pour la viabilité.",
+      "aw très basse et barrière pour préserver les souches."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière azotée.",
+    "applications": [
+      "Grains de kéfir stabilisés",
+      "Ferments prêts à l'emploi",
+      "Compléments probiotiques"
+    ],
+    "related": [
+      "levain",
+      "kombucha",
+      "yaourt",
+      "colostrum"
+    ]
+  },
+  {
+    "slug": "fromage",
+    "titre": "Lyophiliser du fromage",
+    "nom": "fromage",
+    "nomDe": "du fromage",
+    "famille": "laitier",
+    "dluoFamille": "poudre-laitiere",
+    "dluoLipides": "gt10",
+    "ratio": "3:1",
+    "eau": "50 %",
+    "cycle": "28–40 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Poudre ou éclats croquants qui conservent le goût affiné.",
+    "pieges": [
+      "Gras élevé : barrière azotée contre l'oxydation.",
+      "Brunissement de Maillard si aw et température montent."
+    ],
+    "dluoTxt": "6 à 12 mois en barrière azotée.",
+    "applications": [
+      "Poudre de fromage",
+      "Snack croquant",
+      "Assaisonnement"
+    ],
+    "related": [
+      "yaourt",
+      "colostrum",
+      "oeuf",
+      "foie-gras"
+    ]
+  },
+  {
+    "slug": "yaourt",
+    "titre": "Lyophiliser du yaourt",
+    "nom": "yaourt",
+    "nomDe": "du yaourt",
+    "famille": "laitier",
+    "dluoFamille": "poudre-laitiere",
+    "dluoLipides": "m2a10",
+    "ratio": "6:1",
+    "eau": "85 %",
+    "cycle": "26–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Bouchées fondantes et acidulées, ferments partiellement préservés.",
+    "pieges": [
+      "Sucre + protéines : surveiller le brunissement.",
+      "Conditionner à l'abri de l'humidité."
+    ],
+    "dluoTxt": "10 à 18 mois en sachet barrière.",
+    "applications": [
+      "Bouchées de yaourt",
+      "Poudre pour smoothies",
+      "Snack enfant"
+    ],
+    "related": [
+      "kefir",
+      "fromage",
+      "colostrum",
+      "fraise"
+    ]
+  },
+  {
+    "slug": "levain",
+    "titre": "Lyophiliser du levain",
+    "nom": "levain",
+    "nomDe": "du levain",
+    "famille": "ferments",
+    "dluoFamille": "ferment",
+    "dluoLipides": "lt2",
+    "ratio": "3:1",
+    "eau": "55 %",
+    "cycle": "24–34 h",
+    "aw": "0,10–0,20",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Fige les levures et bactéries vivantes tout en gardant leur pouvoir levant.",
+    "pieges": [
+      "Cryoprotecteurs pour la survie des souches.",
+      "Reprise d'humidité fatale : barrière + absorbeur."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière azotée.",
+    "applications": [
+      "Levain sec réactivable",
+      "Kits de boulangerie",
+      "Souches de collection"
+    ],
+    "related": [
+      "kombucha",
+      "kefir",
+      "cafe"
+    ]
+  },
+  {
+    "slug": "kombucha",
+    "titre": "Lyophiliser du kombucha",
+    "nom": "kombucha",
+    "nomDe": "du kombucha",
+    "famille": "ferments",
+    "dluoFamille": "ferment",
+    "dluoLipides": "lt2",
+    "ratio": "12:1",
+    "eau": "92 %",
+    "cycle": "24–34 h",
+    "aw": "0,10–0,20",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Stabilise la culture (SCOBY) et les arômes sans chaleur.",
+    "pieges": [
+      "Très aqueux : faible rendement.",
+      "Souches sensibles : viabilité à documenter."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière azotée.",
+    "applications": [
+      "Culture kombucha stabilisée",
+      "Poudre aromatique",
+      "Compléments"
+    ],
+    "related": [
+      "levain",
+      "kefir",
+      "the",
+      "gingembre"
+    ]
+  },
+  {
+    "slug": "chanvre",
+    "titre": "Lyophiliser du chanvre",
+    "nom": "chanvre",
+    "nomDe": "du chanvre",
+    "famille": "botanique",
+    "dluoFamille": "gras-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "5:1",
+    "eau": "78 %",
+    "cycle": "22–32 h",
+    "aw": "0,30–0,45",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve les actifs botaniques et les arômes végétaux sensibles à la chaleur.",
+    "pieges": [
+      "Feuille ou graine : traitement différent.",
+      "Actifs sensibles à la lumière et à l'oxygène."
+    ],
+    "dluoTxt": "12 à 18 mois en barrière opaque.",
+    "applications": [
+      "Poudre d'actifs botaniques",
+      "Infusions",
+      "Compléments"
+    ],
+    "related": [
+      "basilic",
+      "menthe",
+      "pissenlit",
+      "curcuma"
+    ]
+  },
+  {
+    "slug": "basilic",
+    "titre": "Lyophiliser du basilic",
+    "nom": "basilic",
+    "nomDe": "du basilic",
+    "famille": "botanique",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "12:1",
+    "eau": "90 %",
+    "cycle": "16–24 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Garde la couleur verte et les huiles essentielles perdues au séchage à chaud.",
+    "pieges": [
+      "Arômes volatils : cycle court, conditionnement immédiat.",
+      "Feuille fragile après séchage."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Herbes aromatiques premium",
+      "Poudre pour sauces",
+      "Décor culinaire"
+    ],
+    "related": [
+      "menthe",
+      "pissenlit",
+      "epinard",
+      "cepe"
+    ]
+  },
+  {
+    "slug": "menthe",
+    "titre": "Lyophiliser de la menthe",
+    "nom": "menthe",
+    "nomDe": "de la menthe",
+    "famille": "botanique",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "11:1",
+    "eau": "88 %",
+    "cycle": "16–24 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Fixe le menthol volatil et la couleur, très supérieur au séchage classique.",
+    "pieges": [
+      "Menthol volatil : conditionner à l'abri de l'air.",
+      "Cycle court pour préserver l'arôme."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Infusions premium",
+      "Poudre aromatique",
+      "Cocktails"
+    ],
+    "related": [
+      "basilic",
+      "the",
+      "gingembre",
+      "pissenlit"
+    ]
+  },
+  {
+    "slug": "pissenlit",
+    "titre": "Lyophiliser du pissenlit",
+    "nom": "pissenlit",
+    "nomDe": "du pissenlit",
+    "famille": "botanique",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "12:1",
+    "eau": "89 %",
+    "cycle": "16–24 h",
+    "aw": "0,20–0,30",
+    "procede": "Micro-ondes sous vide",
+    "procedeWhy": "Pour une poudre botanique à longue DLUO au meilleur coût, le micro-ondes sous vide suffit.",
+    "pieges": [
+      "Bien nettoyer la plante sauvage.",
+      "Fleur et racine se traitent séparément."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière opaque.",
+    "applications": [
+      "Infusions",
+      "Poudre d'actifs",
+      "Compléments"
+    ],
+    "related": [
+      "basilic",
+      "menthe",
+      "chanvre",
+      "curcuma"
+    ]
+  },
+  {
+    "slug": "gingembre",
+    "titre": "Lyophiliser du gingembre",
+    "nom": "gingembre",
+    "nomDe": "du gingembre",
+    "famille": "botanique",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "6:1",
+    "eau": "82 %",
+    "cycle": "22–32 h",
+    "aw": "0,20–0,30",
+    "procede": "Micro-ondes sous vide",
+    "procedeWhy": "Pour de la poudre à fort volume et longue DLUO, le micro-ondes sous vide est le plus économique ; lyophilisation pour un gingembre premium réhydratable.",
+    "pieges": [
+      "Fibreux : trancher fin.",
+      "Gingérol thermosensible : maîtriser la température."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière.",
+    "applications": [
+      "Poudre d'épice",
+      "Infusions",
+      "Compléments"
+    ],
+    "related": [
+      "curcuma",
+      "menthe",
+      "the",
+      "cafe"
+    ]
+  },
+  {
+    "slug": "curcuma",
+    "titre": "Lyophiliser du curcuma",
+    "nom": "curcuma",
+    "nomDe": "du curcuma",
+    "famille": "botanique",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "6:1",
+    "eau": "80 %",
+    "cycle": "22–32 h",
+    "aw": "0,20–0,30",
+    "procede": "Micro-ondes sous vide",
+    "procedeWhy": "Poudre colorante et active à fort volume : le micro-ondes sous vide offre la meilleure DLUO au coût le plus bas.",
+    "pieges": [
+      "Colorant tenace : matériel dédié.",
+      "Curcumine sensible à la lumière : barrière opaque."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière opaque.",
+    "applications": [
+      "Épice et colorant",
+      "Compléments (curcumine)",
+      "Boissons dorées"
+    ],
+    "related": [
+      "gingembre",
+      "betterave",
+      "pissenlit",
+      "chanvre"
+    ]
+  },
+  {
+    "slug": "cafe",
+    "titre": "Lyophiliser du café",
+    "nom": "café",
+    "nomDe": "du café",
+    "famille": "boissons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "3:1",
+    "eau": "60 %",
+    "cycle": "20–30 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Le café soluble lyophilisé conserve l'arôme bien mieux que l'atomisation à chaud.",
+    "pieges": [
+      "Extraire et concentrer avant traitement.",
+      "Arômes volatils : conditionner à l'abri de l'air."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière.",
+    "applications": [
+      "Café soluble premium",
+      "Boissons instantanées"
+    ],
+    "related": [
+      "the",
+      "matcha-the",
+      "gingembre",
+      "kombucha"
+    ]
+  },
+  {
+    "slug": "the",
+    "titre": "Lyophiliser du thé",
+    "nom": "thé",
+    "nomDe": "du thé",
+    "famille": "boissons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "5:1",
+    "eau": "78 %",
+    "cycle": "18–28 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Infusion concentrée puis lyophilisée : arôme et polyphénols préservés.",
+    "pieges": [
+      "Concentrer l'infusion avant traitement.",
+      "Polyphénols sensibles à l'oxydation."
+    ],
+    "dluoTxt": "18 à 24 mois en barrière.",
+    "applications": [
+      "Thé instantané premium",
+      "Poudre pour boissons"
+    ],
+    "related": [
+      "cafe",
+      "matcha-the",
+      "menthe",
+      "gingembre"
+    ]
+  },
+  {
+    "slug": "matcha-the",
+    "titre": "Lyophiliser du matcha",
+    "nom": "matcha",
+    "nomDe": "du matcha",
+    "famille": "boissons",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "m2a10",
+    "ratio": "5:1",
+    "eau": "76 %",
+    "cycle": "18–28 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve la couleur verte vive et les catéchines antioxydantes.",
+    "pieges": [
+      "Couleur sensible à la lumière et à l'oxygène.",
+      "Broyage fin à préciser."
+    ],
+    "dluoTxt": "12 à 24 mois en barrière opaque.",
+    "applications": [
+      "Poudre premium",
+      "Boissons et pâtisserie"
+    ],
+    "related": [
+      "the",
+      "cafe",
+      "spiruline",
+      "menthe"
+    ]
+  },
+  {
+    "slug": "miel",
+    "titre": "Lyophiliser du miel",
+    "nom": "miel",
+    "nomDe": "du miel",
+    "famille": "special",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "1,3:1",
+    "eau": "18 %",
+    "cycle": "variable",
+    "aw": "0,50–0,60",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Difficile : très riche en sucres, le miel a tendance à collapser. Un pré-traitement ou un support est souvent nécessaire — un essai pilote est indispensable.",
+    "pieges": [
+      "Sucres très hygroscopiques : collapse fréquent.",
+      "Souvent besoin d'un support (maltodextrine) ou d'un mélange."
+    ],
+    "dluoTxt": "Variable selon la formulation ; barrière hermétique impérative.",
+    "applications": [
+      "Poudre de miel",
+      "Enrobage et snacking",
+      "Nutrition sportive"
+    ],
+    "related": [
+      "fraise",
+      "gingembre",
+      "cafe",
+      "levain"
+    ]
+  },
+  {
+    "slug": "bouquet-mariee",
+    "titre": "Lyophiliser un bouquet de mariée",
+    "nom": "bouquet de mariée",
+    "nomDe": "du bouquet de mariée",
+    "famille": "souvenirs",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "—",
+    "eau": "variable",
+    "cycle": "5–15 j",
+    "aw": "n/a",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Fige la forme et les couleurs des fleurs fraîches, mémoire intacte pour des années.",
+    "pieges": [
+      "Traiter très frais, dans les 48 h.",
+      "Cycle long et délicat, fleur par fleur."
+    ],
+    "dluoTxt": "Plusieurs années sous cloche ou cadre à l'abri de l'humidité.",
+    "applications": [
+      "Souvenir de mariage",
+      "Encadrement, cloche, résine"
+    ],
+    "related": [
+      "fleur",
+      "document-sinistre",
+      "placenta"
+    ]
+  },
+  {
+    "slug": "fleur",
+    "titre": "Lyophiliser des fleurs",
+    "nom": "fleur",
+    "nomDe": "de la fleur",
+    "famille": "souvenirs",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "—",
+    "eau": "variable",
+    "cycle": "4–12 j",
+    "aw": "n/a",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve pétales et couleurs sans les écraser, contrairement au pressage.",
+    "pieges": [
+      "Chaque espèce a son cycle.",
+      "Fragilité après séchage, manipulation soigneuse."
+    ],
+    "dluoTxt": "Plusieurs années à l'abri de l'humidité et de la lumière.",
+    "applications": [
+      "Décoration et art floral",
+      "Souvenirs",
+      "Confettis et cosmétique"
+    ],
+    "related": [
+      "bouquet-mariee",
+      "basilic",
+      "menthe"
+    ]
+  },
+  {
+    "slug": "document-sinistre",
+    "titre": "Lyophiliser des documents sinistrés",
+    "nom": "document sinistré",
+    "nomDe": "du document sinistré",
+    "famille": "special",
+    "dluoFamille": "maigre-vegetal",
+    "dluoLipides": "lt2",
+    "ratio": "—",
+    "eau": "variable",
+    "cycle": "2–10 j",
+    "aw": "n/a",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Le séchage sous vide retire l'eau sans gondoler ni coller les pages, et bloque la moisissure.",
+    "pieges": [
+      "Congeler immédiatement, ne pas tenter de sécher à l'air.",
+      "Agir vite : la moisissure démarre en 48 h."
+    ],
+    "dluoTxt": "Restauration définitive ; conservation ensuite selon l'archivage.",
+    "applications": [
+      "Livres et archives",
+      "Actes notariés, dossiers médicaux",
+      "Photographies, plans"
+    ],
+    "related": [
+      "bouquet-mariee",
+      "fleur",
+      "echantillon-labo"
+    ]
+  },
+  {
+    "slug": "placenta",
+    "titre": "Lyophiliser un placenta",
+    "nom": "placenta",
+    "nomDe": "du placenta",
+    "famille": "special",
+    "dluoFamille": "carne",
+    "dluoLipides": "m2a10",
+    "ratio": "4:1",
+    "eau": "80 %",
+    "cycle": "24–36 h",
+    "aw": "0,20–0,30",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Préserve les composés sans chaleur, dans un cadre d'hygiène strict, pour l'encapsulation.",
+    "pieges": [
+      "Protocole d'hygiène et traçabilité stricts.",
+      "Chaîne du froid impérative avant traitement."
+    ],
+    "dluoTxt": "12 à 24 mois en gélules, à l'abri de l'humidité.",
+    "applications": [
+      "Encapsulation (placentophagie)",
+      "Conservation personnelle"
+    ],
+    "related": [
+      "colostrum",
+      "foie-volaille",
+      "echantillon-labo"
+    ]
+  },
+  {
+    "slug": "echantillon-labo",
+    "titre": "Lyophiliser des échantillons de laboratoire",
+    "nom": "échantillon de laboratoire",
+    "nomDe": "de l'échantillon de laboratoire",
+    "famille": "special",
+    "dluoFamille": "ferment",
+    "dluoLipides": "lt2",
+    "ratio": "—",
+    "eau": "variable",
+    "cycle": "variable",
+    "aw": "0,05–0,20",
+    "procede": "Lyophilisation",
+    "procedeWhy": "Stabilise durablement souches, réactifs et échantillons biologiques sans chaîne du froid.",
+    "pieges": [
+      "Cryoprotecteurs et protocole adaptés à chaque échantillon.",
+      "aw très basse et traçabilité complète."
+    ],
+    "dluoTxt": "Plusieurs années en flacon scellé sous vide ou azote.",
+    "applications": [
+      "Souches et ferments de collection",
+      "Réactifs stabilisés",
+      "Échantillothèque de référence"
+    ],
+    "related": [
+      "levain",
+      "kefir",
+      "kombucha",
+      "colostrum"
+    ]
+  }
 ]

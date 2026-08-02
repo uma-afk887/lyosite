@@ -469,6 +469,17 @@ ul { color: var(--ink-soft); }
 .mat-empty { text-align:center; color:var(--muted); margin-top:24px; }
 .mat-empty a { color:var(--brand-deep); }
 
+/* ---------- Fiches matières : images & prochaine étape ---------- */
+.fiche-fig { margin:0; }
+.fiche-fig img { width:100%; height:auto; aspect-ratio:auto; border-radius:var(--radius-lg); border:1px solid var(--line); display:block; background:var(--frost); }
+.fiche-fig figcaption { margin-top:8px; font-size:.9rem; color:var(--ink-soft); }
+.fiche-fig--lead img { box-shadow:var(--shadow-md); }
+.fiche-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+@media (max-width:820px){ .fiche-gallery { grid-template-columns:1fr; } }
+.nextstep { background:linear-gradient(150deg,var(--brand-050),var(--frost)); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:var(--radius-lg); padding:26px; }
+.nextstep-label { display:inline-block; font-family:var(--font-head); font-weight:600; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--brand-deep); background:var(--brand-100); padding:5px 12px; border-radius:999px; }
+.nextstep h2 { margin:14px 0 8px; }
+
 /* ---------- Tableau comparateur ---------- */
 .compare-wrap { overflow-x:auto; margin-top:34px; border-radius:var(--radius-lg); box-shadow:var(--shadow-md); }
 .compare { width:100%; border-collapse:collapse; min-width:680px; background:#fff; }
