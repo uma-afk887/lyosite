@@ -77,5 +77,11 @@ window.SITE_CONFIG = {
     analyseStabilite: { min: 1500, max: 4000, unit: "par produit" },
     abonnementRemiseSeuil: 24, // cycles/an au-delà desquels s'applique la remise
     abonnementRemisePct: 10,   // % de remise
+    // Simulateur d'abonnement capacité (valeurs indicatives, à ajuster)
+    capacite: {
+      cycleBase: 600,   // € pour un cycle à 1 chariot
+      chariot: 250,     // € par chariot supplémentaire
+      mult: { standard: 1, premium: 1.2, sensible: 1.35 }, // selon la famille de produit
+    },
   },
 };

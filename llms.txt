@@ -45,6 +45,9 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 - [Sinistres & urgences](https://www.lyosurgeres.fr/sinistres-urgence.html) : séchage de documents et archives après dégât des eaux, 7j/7, partenaire des assureurs et cabinets d'expertise.
 - [Comparatif des procédés](https://www.lyosurgeres.fr/comparatif-sechage.html) : air chaud vs micro-ondes sous vide vs lyophilisation (durée, énergie, structure, DLUO, coût).
 - [Marque blanche](https://www.lyosurgeres.fr/marque-blanche.html) : développement, production, conditionnement et étiquetage sous la marque du client.
+- [Abonnement capacité](https://www.lyosurgeres.fr/abonnement-capacite.html) : réservation de cycles à l'année, minimum garanti, remise 10 % au-delà de 24 cycles, simulateur de budget.
+- [Journal de l'atelier](https://www.lyosurgeres.fr/journal/index.html) : retours d'expérience hebdomadaires (matière, ratio, aw, réussites et échecs).
+- [Guides à télécharger](https://www.lyosurgeres.fr/fiches/index.html) : fiches PDF imprimables par famille (ratio, cycle, aw, procédé, DLUO).
 - [Test échantillon 200 g](https://www.lyosurgeres.fr/test-echantillon.html) : essai à 250-500 €, fiche technique, déductible du 1er lot.
 - [Développement de cycle](https://www.lyosurgeres.fr/developpement-cycle.html) : essai pilote 800-2500 €.
 - [Calculateur de DLUO](https://www.lyosurgeres.fr/stabilite-dluo.html) : outil gratuit pour estimer la durée de vie selon famille, lipides, emballage, température ; encart pédagogique sur l'aw.
