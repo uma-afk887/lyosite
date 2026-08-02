@@ -469,6 +469,34 @@ ul { color: var(--ink-soft); }
 .mat-empty { text-align:center; color:var(--muted); margin-top:24px; }
 .mat-empty a { color:var(--brand-deep); }
 
+/* ---------- Tableau comparateur ---------- */
+.compare-wrap { overflow-x:auto; margin-top:34px; border-radius:var(--radius-lg); box-shadow:var(--shadow-md); }
+.compare { width:100%; border-collapse:collapse; min-width:680px; background:#fff; }
+.compare th, .compare td { padding:13px 16px; text-align:left; border-bottom:1px solid var(--line); font-size:.94rem; vertical-align:top; }
+.compare thead th { font-family:var(--font-head); background:var(--ink); color:#fff; cursor:pointer; user-select:none; position:relative; }
+.compare thead th:first-child { background:var(--brand-deep); cursor:default; }
+.compare thead th.on { background:var(--brand); }
+.compare th[scope=row] { font-weight:600; color:var(--ink); background:var(--frost); white-space:nowrap; }
+.compare td.on { background:var(--brand-050); }
+.compare tbody tr:last-child td { border-bottom:none; }
+.compare-hint { text-align:center; color:var(--muted); font-size:.86rem; margin-top:12px; }
+
+/* ---------- Simulateur abonnement ---------- */
+.simulator { max-width:820px; margin:34px auto 0; background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-md); padding:26px; }
+.sim-out { margin-top:22px; border-top:1px solid var(--line); padding-top:20px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; }
+@media (max-width:600px){ .sim-out { grid-template-columns:1fr; } }
+.sim-cell { background:var(--brand-050); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; text-align:center; }
+.sim-cell .k { display:block; font-size:.74rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-family:var(--font-head); font-weight:600; }
+.sim-cell .v { display:block; margin-top:6px; font-family:var(--font-head); font-weight:700; font-size:1.5rem; color:var(--brand-deep); }
+.sim-cell .v.small { font-size:1.1rem; }
+.sim-save { color:var(--ok) !important; }
+
+/* ---------- Journal de l'atelier ---------- */
+.journal-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:40px; }
+@media (max-width:900px){ .journal-grid { grid-template-columns:1fr; } }
+.journal-card .jmeta { display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:10px; font-size:.85rem; color:var(--muted); }
+.journal-card .jmeta b { color:var(--brand-deep); }
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }

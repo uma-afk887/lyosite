@@ -59,4 +59,7 @@
   <url><loc>https://www.lyosurgeres.fr/matieres/document-sinistre.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.lyosurgeres.fr/matieres/placenta.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.lyosurgeres.fr/matieres/echantillon-labo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lyosurgeres.fr/sinistres-urgence.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.lyosurgeres.fr/comparatif-sechage.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.lyosurgeres.fr/marque-blanche.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
