@@ -2,11 +2,16 @@
    avis.js — Mur d'avis réutilisable (balisage Review)
    -------------------------------------------------------------
    S'active sur tout conteneur <div class="avis-wall" data-avis></div>.
-   ⚠️ Les entrées ci-dessous sont des EXEMPLES marqués placeholder:true.
-   Remplacez-les par de vrais témoignages — uniquement avec l'accord
-   écrit du client. Le balisage Review / AggregateRating n'est émis
-   QUE pour les avis réels (placeholder absent ou false), afin de ne
-   jamais publier de faux avis dans les données structurées.
+
+   PLACEHOLDERS À REMPLACER : les entrées ci-dessous sont des maquettes
+   (placeholder:true) rendues sans badge, pour visualiser le rendu final.
+   Remplacez le texte/nom/role par vos vrais avis, puis passez chaque
+   entrée à placeholder:false (ou retirez le champ) pour activer le
+   balisage structuré Review/AggregateRating.
+
+   Le flag placeholder ne change RIEN à l'affichage : il ne fait que
+   retenir l'émission du JSON-LD Review tant que l'avis n'est pas réel
+   (les données structurées ne doivent pointer que sur de vrais avis).
    ============================================================= */
 (function () {
   var AVIS = [
