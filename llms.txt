@@ -38,7 +38,10 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 
 ## Pages
 - [Accueil](https://www.lyosurgeres.fr/index.html) : présentation, prestations et réservation.
-- [Prestations](https://www.lyosurgeres.fr/services.html) : détail de chaque service et FAQ.
+- [Prestations](https://www.lyosurgeres.fr/services.html) : sommaire, oriente vers les deux parcours et détaille chaque service (FAQ).
+- [Professionnels](https://www.lyosurgeres.fr/services-pro.html) : parcours marques, producteurs, industriels, laboratoires (R&D, essai, DLUO, production).
+- [Particuliers](https://www.lyosurgeres.fr/services-particuliers.html) : souvenirs, fleurs, documents sinistrés, petites séries.
+- [Ce qui ne marche pas](https://www.lyosurgeres.fr/ce-qui-ne-marche-pas.html) : les produits qui se lyophilisent mal et pourquoi (laitue, chocolat, très gras, très sucrés, alcool).
 - [Test échantillon 200 g](https://www.lyosurgeres.fr/test-echantillon.html) : essai à 250-500 €, fiche technique, déductible du 1er lot.
 - [Développement de cycle](https://www.lyosurgeres.fr/developpement-cycle.html) : essai pilote 800-2500 €.
 - [Calculateur de DLUO](https://www.lyosurgeres.fr/stabilite-dluo.html) : outil gratuit pour estimer la durée de vie selon famille, lipides, emballage, température ; encart pédagogique sur l'aw.
