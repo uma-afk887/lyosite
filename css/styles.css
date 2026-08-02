@@ -427,6 +427,10 @@ ul { color: var(--ink-soft); }
 .decision-result b { color:var(--brand-deep); }
 .decision-result .tag-mo { color:#b45309; }
 .decision-result a { color:var(--brand-deep); text-decoration:underline; }
+.decision-why { display:block; margin-top:10px; font-weight:500; font-size:.96rem; color:var(--ink-soft); font-family:var(--font-body); line-height:1.5; }
+.decision-cost { display:block; margin-top:8px; font-weight:500; font-size:.92rem; color:var(--muted); font-family:var(--font-body); }
+.decision-cta { margin-top:16px; }
+.decision-cta a { text-decoration:none; }
 
 /* ---------- Encadré prix / offre ---------- */
 .price-tag { display:inline-flex; align-items:baseline; gap:8px; margin-top:14px; font-family:var(--font-head); }

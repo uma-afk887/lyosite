@@ -1,11 +1,11 @@
 # LyoSurgères
 
-> Spécialiste de la lyophilisation à façon implanté à La Rochelle (Charente-Maritime, France). Lyophilisation de produits d'exception, séchage accéléré par micro-ondes pour les gros volumes, mise en sachet, R&D et lots pilotes pour les marques. Réservation d'un créneau de dépôt en ligne.
+> Spécialiste de la lyophilisation à façon implanté à Surgères (17700), près de La Rochelle (Charente-Maritime, France). Lyophilisation de produits d'exception, séchage accéléré par micro-ondes pour les gros volumes, mise en sachet, R&D et lots pilotes pour les marques. Réservation d'un créneau de dépôt en ligne.
 
 LyoSurgères (marque « LyoSurgères — Lyophilisation à façon ») est un atelier et laboratoire de lyophilisation. Le procédé (séchage à froid par sublimation, sous vide) retire l'eau des produits sans les chauffer, ce qui préserve le goût, la couleur et les nutriments, sans additif ni conservateur.
 
 ## Implantation
-- Spécialiste implanté à La Rochelle (Charente-Maritime, 17), Nouvelle-Aquitaine, France.
+- Atelier et laboratoire à Surgères (17700), près de La Rochelle (Charente-Maritime, 17), Nouvelle-Aquitaine, France.
 - Atelier de dépôt à Surgères (17700), dans l'agglomération de La Rochelle.
 - Zone desservie : La Rochelle, Surgères, Charente-Maritime, Nouvelle-Aquitaine, France entière (envoi possible).
 
@@ -32,12 +32,15 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 3. Cherche-t-on surtout une DLUO longue au meilleur coût ? Si oui → séchage micro-ondes.
 
 ## Prestations d'ingénierie (facturables)
+- Test échantillon « Envoyez-nous 200 g » : le client envoie 200 g de produit congelé et reçoit sous 15 jours son échantillon lyophilisé + une fiche technique (rendement, aw finale, durée de cycle, procédé et conditionnement recommandés, coût de transformation au kilo estimé). 250 à 500 € par échantillon, déductible du premier lot industriel. C'est l'entonnoir de conversion principal. Voir https://www.lyosurgeres.fr/test-echantillon.html
 - Développement de cycle (essai pilote) : rapport avec courbe de séchage, rendement mesuré, activité de l'eau (aw) finale, recommandation de procédé et d'emballage. 800 à 2 500 € par essai, déductible du premier lot industriel. Voir https://www.lyosurgeres.fr/developpement-cycle.html
 - Analyse de stabilité & DLUO : mesure d'aw, isotherme de sorption, vieillissement accéléré, et DLUO argumentée pour l'étiquette. 1 500 à 4 000 € par produit.
 
 ## Pages
 - [Accueil](https://www.lyosurgeres.fr/index.html) : présentation, prestations et réservation.
 - [Prestations](https://www.lyosurgeres.fr/services.html) : détail de chaque service et FAQ.
+- [Test échantillon 200 g](https://www.lyosurgeres.fr/test-echantillon.html) : essai à 250-500 €, fiche technique, déductible du 1er lot.
+- [Développement de cycle](https://www.lyosurgeres.fr/developpement-cycle.html) : essai pilote 800-2500 €.
 - [À propos](https://www.lyosurgeres.fr/a-propos.html) : mission, capacités (micro-ondes, mise en sachet), procédé.
 - [Réservation](https://www.lyosurgeres.fr/reservation.html) : choix d'une date et d'un créneau de dépôt.
 - [Contact](https://www.lyosurgeres.fr/contact.html) : adresse, téléphone, e-mail, formulaire.

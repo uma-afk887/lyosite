@@ -59,4 +59,23 @@ window.SITE_CONFIG = {
     instagram: "",
     linkedin: "",
   },
+
+  // --- Localisation (cohérence NAP — adresse physique unique) -
+  // L'adresse du LocalBusiness est Surgères. La Rochelle n'est
+  // qu'une zone desservie (contenu / SEO), jamais l'adresse.
+  geo: { lat: 46.108, lng: -0.748, placename: "Surgères" },
+  areaServed: ["La Rochelle", "Surgères", "Charente-Maritime", "Nouvelle-Aquitaine", "France"],
+
+  // --- Numéro d'urgence sinistres (7j/7) ----------------------
+  emergencyPhone: "06 00 00 00 00",
+
+  // --- Tarifs indicatifs (affichés sur le site) ---------------
+  // Modifiez librement : ces valeurs alimentent les pages et widgets.
+  pricing: {
+    testEchantillon: { min: 250, max: 500, unit: "par échantillon (200 g)" },
+    developpementCycle: { min: 800, max: 2500, unit: "par essai" },
+    analyseStabilite: { min: 1500, max: 4000, unit: "par produit" },
+    abonnementRemiseSeuil: 24, // cycles/an au-delà desquels s'applique la remise
+    abonnementRemisePct: 10,   // % de remise
+  },
 };

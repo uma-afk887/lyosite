@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="LyoSurgères — spécialiste de la lyophilisation à La Rochelle">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="LyoSurgères — lyophilisation à façon à Surgères, près de La Rochelle">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
@@ -26,12 +26,12 @@
   <text x="214" y="176" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="21" font-weight="600" letter-spacing="3" fill="#0a5f6e">LYOPHILISATION À FAÇON</text>
 
   <!-- Headline -->
-  <text x="96" y="330" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0b2432">Spécialiste de la</text>
-  <text x="96" y="410" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0f8b9e">lyophilisation à La Rochelle</text>
+  <text x="96" y="330" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0b2432">Lyophilisation</text>
+  <text x="96" y="410" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0f8b9e">à façon &amp; sur mesure</text>
 
   <!-- Subline -->
-  <text x="96" y="470" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="500" fill="#33505f">Produits d'exception · huîtres · spiruline · actifs botaniques</text>
-  <text x="96" y="512" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="500" fill="#33505f">Séchage micro-ondes gros volumes · mise en sachet · R&amp;D</text>
+  <text x="96" y="470" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="600" fill="#0a5f6e">Surgères (17) · près de La Rochelle · toute la France</text>
+  <text x="96" y="508" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="27" font-weight="500" fill="#33505f">Produits d'exception · séchage micro-ondes · mise en sachet</text>
 
   <!-- Pills -->
   <g font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="24" font-weight="600">
