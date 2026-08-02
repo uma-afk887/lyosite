@@ -24,6 +24,12 @@
   var widgets = document.querySelectorAll('.dluo-widget');
   if (!widgets.length) return;
 
+  // Base du site déduite de l'URL (déjà résolue) de ce script,
+  // pour que les liens fonctionnent aussi depuis /matieres/.
+  var BASE = '';
+  var self = document.currentScript;
+  if (self && self.src) BASE = self.src.replace(/js\/dluo\.js(?:\?.*)?$/, '');
+
   var FAMILLES = [
     ['maigre-vegetal',  'Maigre végétal (fruit, légume)'],
     ['gras-vegetal',    'Gras végétal (oléagineux, graine)'],
@@ -132,7 +138,7 @@
           cell('Conditionnement conseillé', r.need + (r.packOk ? ' <span class="dluo-ok">✓ votre choix convient</span>' : '')) +
         '</div>' +
         (r.note ? '<p class="dluo-note">' + r.note + '</p>' : '') +
-        '<p class="dluo-disc">Estimation indicative. Pour une DLUO <strong>opposable sur étiquette</strong>, nous réalisons une analyse de stabilité (a<sub>w</sub>, isotherme de sorption, vieillissement accéléré) — 1 500 à 4 000 € par produit. <a href="contact.html">Demander une analyse →</a></p>';
+        '<p class="dluo-disc">Estimation indicative. Pour une DLUO <strong>opposable sur étiquette</strong>, nous réalisons une analyse de stabilité (a<sub>w</sub>, isotherme de sorption, vieillissement accéléré) — 1 500 à 4 000 € par produit. <a href="' + BASE + 'contact.html">Demander une analyse →</a></p>';
     }
     render();
   }
