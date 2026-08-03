@@ -70,12 +70,7 @@ window.SITE_CONFIG = {
   // ⚠️ Ne laissez que des URL qui EXISTENT (une URL morte nuit).
   sameAs: [
     "https://www.linkedin.com/company/0nova/",
-    // Google Business Profile — collez ici le lien « Maps » de votre
-    // fiche (bouton Partager sur la fiche → format
-    // https://maps.app.goo.gl/... ou https://maps.google.com/?cid=...).
-    // ⚠️ L'URL de RECHERCHE Google (google.com/search?...) n'est pas
-    // exploitable comme sameAs : il faut le lien Maps de la fiche.
-    // "https://maps.app.goo.gl/VOTRE_LIEN",
+    "https://maps.google.com/?cid=3886879487191400358",
     // Annuaires pro (PagesJaunes, Societe.com, Kompass…) :
     // "https://www.pagesjaunes.fr/pros/VOTRE_FICHE",
   ],
