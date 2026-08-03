@@ -33,6 +33,7 @@ CHECK = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
 NAV_ITEMS = [
     ("index.html", "Home"),
     ("contract-freeze-drying.html", "Contract freeze-drying"),
+    ("pricing.html", "Pricing"),
     ("sample-test.html", "Sample test"),
     ("about.html", "About"),
     ("contact.html", "Contact"),
@@ -76,13 +77,13 @@ def footer(fr_page):
           </div>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Services &amp; products</h4>
           <ul>
             <li><a href="contract-freeze-drying.html">Contract freeze-drying</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="sample-test.html">Sample test (200 g)</a></li>
-            <li><a href="contract-freeze-drying.html#technologies">Vacuum microwave drying</a></li>
-            <li><a href="contract-freeze-drying.html#packaging">Barrier packaging</a></li>
-            <li><a href="contract-freeze-drying.html#randd">R&amp;D &amp; pilot runs</a></li>
+            <li><a href="freeze-dried-oysters.html">Freeze-dried oysters</a></li>
+            <li><a href="freeze-dried-spirulina.html">Freeze-dried spirulina</a></li>
           </ul>
         </div>
         <div>
@@ -232,7 +233,7 @@ home_body = f'''    <section class="hero">
         <h2>Brands, producers, labs — across Europe</h2>
         <div class="grid grid--3">
           <article class="card"><h3>Food &amp; premium</h3><p>Fruit, vegetables, ready meals, coffee, herbs, snacks — and freeze-dried candy.</p></article>
-          <article class="card"><h3>Seafood &amp; algae</h3><p>Oysters, sea urchins, shellfish, seaweed, spirulina and chlorella with colour and protein preserved.</p></article>
+          <article class="card"><h3>Seafood &amp; algae</h3><p><a href="freeze-dried-oysters.html">Freeze-dried oysters</a>, sea urchins, shellfish, seaweed, <a href="freeze-dried-spirulina.html">freeze-dried spirulina</a> and chlorella with colour and protein preserved.</p></article>
           <article class="card"><h3>Actives &amp; supplements</h3><p>Botanical extracts, ferments, probiotics, proteins — for nutraceutical and cosmetic formulators.</p></article>
         </div>
         <div style="margin-top:26px;">
@@ -471,6 +472,174 @@ PAGES.append(dict(
                    "telephone": "+33546000000"}},
         breadcrumb([("Home", f"{BASE}/en/index.html"),
                     ("Contact", f"{BASE}/en/contact.html")]),
+    ],
+))
+
+# ---- 6. Freeze-dried oysters --------------------------------------------
+oyster_faq = [
+    ("Can oysters really be freeze-dried?",
+     "Yes. Freeze-drying removes about 80–85% water from the oyster by sublimation, without cooking it, so the shape, colour and marine aroma are preserved. Rehydrated, it recovers a remarkable amount of its original texture; eaten dry, it becomes an intense, crunchy snack."),
+    ("What shelf life can freeze-dried oysters reach?",
+     "With a low final water activity and a proper barrier pack (aluminium or EVOH, nitrogen flush, oxygen absorber), freeze-dried oysters keep for many months to a couple of years at ambient temperature — the exact best-before date comes from our stability testing."),
+    ("Do you work for oyster farmers and food brands?",
+     "Yes — this is contract work. You send us a frozen sample, we qualify the cycle, then produce and pack under your own brand. It is a way to valorise calibres that are hard to sell fresh, and to open export markets that fresh product can't reach."),
+]
+oyster_body = f'''    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Freeze-dried products</span>
+        <h1>Freeze-dried oysters</h1>
+        <p>Contract freeze-drying of oysters for growers and food brands, from our workshop near La Rochelle — the heart of French oyster country (Marennes-Oléron). We turn a fragile, perishable product into a stable, shippable, high-value one.</p>
+        <div style="margin-top:18px;"><a class="btn btn--primary btn--lg" href="sample-test.html">Test your oysters (200 g)</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:820px;">
+        <h2>Why freeze-drying suits oysters</h2>
+        <p>An oyster is roughly 80–85% water and extremely heat-sensitive. Hot-air drying would cook and shrink it; freeze-drying removes the water by sublimation under vacuum, at low temperature, so the chair keeps its shape, its colour and its marine, iodised aroma. The result is light, stable at ambient temperature, and either rehydrated for cooking or eaten as an intense dry snack.</p>
+
+        <h2>Typical figures</h2>
+        <ul class="check-list">
+          <li>{CHECK} Fresh-to-dry ratio around 5–6 : 1 (indicative — confirmed by the sample test).</li>
+          <li>{CHECK} Low final water activity for long ambient shelf life.</li>
+          <li>{CHECK} Barrier packaging: aluminium or EVOH, nitrogen flush, oxygen absorber.</li>
+        </ul>
+
+        <h2>What brands do with them</h2>
+        <p>Premium aperitif snacks, iodised powders and seasonings for chefs, garnishes for ready meals, export products that cannot travel fresh, and a way to valorise calibres that are difficult to sell on the fresh market.</p>
+
+        <h2>Our contract service</h2>
+        <p>Send us 200 g frozen; we return a freeze-dried sample and a spec sheet (yield, final aw, cycle, recommended packaging, cost per kilo). We then scale to pilot and production, and pack under your brand.</p>
+        <div style="margin-top:22px;"><a class="btn btn--primary btn--lg" href="sample-test.html">Start with a sample test</a> <a class="btn btn--ghost btn--lg" href="pricing.html">See pricing</a></div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container" style="max-width:820px;">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-group">
+          {"".join(f'<details class="faq-item"><summary>{q}</summary><div class="faq-body"><p>{a}</p></div></details>' for q, a in oyster_faq)}
+        </div>
+      </div>
+    </section>'''
+PAGES.append(dict(
+    slug="freeze-dried-oysters.html", fr="matieres/huitre.html",
+    title="Freeze-Dried Oysters — Contract Freeze-Drying | LyoSurgères",
+    desc="Contract freeze-drying of oysters near La Rochelle (France). Preserve shape, colour and marine aroma; long ambient shelf life; private label. Test your oysters with a 200 g sample.",
+    body=oyster_body,
+    jsonld=[
+        service_ld("Freeze-dried oysters — contract freeze-drying",
+                   "Contract freeze-drying of oysters for growers and food brands: preserves shape, colour and marine aroma, long ambient shelf life, barrier packaging and private label."),
+        {"@context": "https://schema.org", "@type": "FAQPage",
+         "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in oyster_faq]},
+        breadcrumb([("Home", f"{BASE}/en/index.html"), ("Freeze-dried oysters", f"{BASE}/en/freeze-dried-oysters.html")]),
+    ],
+))
+
+# ---- 7. Freeze-dried spirulina ------------------------------------------
+spir_faq = [
+    ("Why freeze-dry spirulina instead of spray or hot-air drying?",
+     "Spirulina's value is in heat-sensitive compounds — above all phycocyanin, the blue pigment-protein. High-temperature drying degrades colour and part of the nutritional value. Freeze-drying works at low temperature under vacuum, so it preserves the deep blue-green colour, the phycocyanin and the protein far better."),
+    ("In what form do you deliver it?",
+     "Freeze-dried spirulina is delivered as flakes or as a powder after milling, ready for tablets, capsules, smoothies or food formulation. We finish with barrier packaging to protect it from oxygen and humidity."),
+    ("Do you work with fresh spirulina from producers?",
+     "Yes. Producers send us fresh (frozen) spirulina; we run the cycle to preserve colour and actives, and can pack under their brand. The sample test qualifies your specific strain and biomass first."),
+]
+spir_body = f'''    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Freeze-dried products</span>
+        <h1>Freeze-dried spirulina</h1>
+        <p>Contract freeze-drying of spirulina and micro-algae that keeps the colour, the phycocyanin and the protein — for producers and nutraceutical brands, from our lab near La Rochelle.</p>
+        <div style="margin-top:18px;"><a class="btn btn--primary btn--lg" href="sample-test.html">Test your spirulina (200 g)</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:820px;">
+        <h2>Why low-temperature drying matters</h2>
+        <p>Spirulina is prized for heat-sensitive molecules — first among them phycocyanin, the blue pigment-protein that also drives much of its market value. Spray-drying and hot-air drying degrade colour and part of the actives. Freeze-drying removes water by sublimation at low temperature, so the finished powder keeps its deep blue-green colour, its phycocyanin and its protein content.</p>
+
+        <h2>Typical figures</h2>
+        <ul class="check-list">
+          <li>{CHECK} Very high water content when fresh — a large fresh-to-dry ratio (confirmed by the sample test).</li>
+          <li>{CHECK} Colour and phycocyanin preserved versus hot-air processes.</li>
+          <li>{CHECK} Delivered as flakes or milled powder, in barrier packaging.</li>
+        </ul>
+
+        <h2>Uses</h2>
+        <p>Food-supplement powders, tablets and capsules, functional foods, and premium nutraceutical or cosmetic ingredients where colour and bioactivity are the selling point.</p>
+
+        <h2>Our contract service</h2>
+        <p>Send 200 g frozen; we return a freeze-dried sample and a spec sheet, then scale to pilot and production and pack under your brand.</p>
+        <div style="margin-top:22px;"><a class="btn btn--primary btn--lg" href="sample-test.html">Start with a sample test</a> <a class="btn btn--ghost btn--lg" href="pricing.html">See pricing</a></div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container" style="max-width:820px;">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-group">
+          {"".join(f'<details class="faq-item"><summary>{q}</summary><div class="faq-body"><p>{a}</p></div></details>' for q, a in spir_faq)}
+        </div>
+      </div>
+    </section>'''
+PAGES.append(dict(
+    slug="freeze-dried-spirulina.html", fr="matieres/spiruline.html",
+    title="Freeze-Dried Spirulina — Contract Freeze-Drying | LyoSurgères",
+    desc="Contract freeze-drying of spirulina and micro-algae near La Rochelle (France). Preserves colour, phycocyanin and protein; flakes or powder; private label. Test your spirulina with a 200 g sample.",
+    body=spir_body,
+    jsonld=[
+        service_ld("Freeze-dried spirulina — contract freeze-drying",
+                   "Contract freeze-drying of spirulina and micro-algae: preserves colour, phycocyanin and protein, delivered as flakes or powder with barrier packaging and private label."),
+        {"@context": "https://schema.org", "@type": "FAQPage",
+         "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in spir_faq]},
+        breadcrumb([("Home", f"{BASE}/en/index.html"), ("Freeze-dried spirulina", f"{BASE}/en/freeze-dried-spirulina.html")]),
+    ],
+))
+
+# ---- 8. Pricing ----------------------------------------------------------
+pricing_body = f'''    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Pricing</span>
+        <h1>Freeze-drying cost &amp; pricing</h1>
+        <p>Honest ranges and the factors that actually drive the price. Freeze-drying is billed on machine time, not on weight alone — so the water you start with and the cycle it needs matter more than the kilos you end up with.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:820px;">
+        <h2>What drives the cost</h2>
+        <ul class="check-list">
+          <li>{CHECK} <strong>Water content &amp; cycle time</strong> — the wetter the product and the more delicate the cycle, the longer the machine runs.</li>
+          <li>{CHECK} <strong>Volume &amp; frequency</strong> — recurring cycles and full loads lower the cost per kilo; a capacity subscription lowers it further.</li>
+          <li>{CHECK} <strong>Process</strong> — vacuum microwave drying is often cheaper than freeze-drying when the product doesn't need to rehydrate.</li>
+          <li>{CHECK} <strong>Packaging</strong> — barrier film, nitrogen flushing and oxygen absorbers add cost but buy shelf life.</li>
+        </ul>
+
+        <h2>Engineering steps &amp; typical prices</h2>
+        <div class="grid grid--2">
+          <article class="card"><h3>Sample test (200 g)</h3><p><strong>€250–500</strong> per sample. Freeze-dried sample + spec sheet (yield, final aw, cycle, process &amp; packaging, cost per kilo). <em>Deductible from your first industrial batch.</em></p><p><a class="btn btn--ghost" href="sample-test.html">Details</a></p></article>
+          <article class="card"><h3>Cycle development</h3><p><strong>€800–2,500</strong> per trial. Pilot run with drying curve, measured yield, final aw and a process &amp; packaging recommendation. <em>Deductible from your first industrial batch.</em></p></article>
+          <article class="card"><h3>Stability &amp; shelf-life analysis</h3><p><strong>€1,500–4,000</strong> per product. Water-activity measurement, sorption isotherm, accelerated ageing and an argued best-before date for your label.</p></article>
+          <article class="card"><h3>Production &amp; subscription</h3><p>Per-cycle pricing for production, with a capacity subscription for recurring volumes and a discount beyond an agreed number of cycles per year.</p></article>
+        </div>
+
+        <div class="panel" style="margin-top:28px;">
+          <h2>The cheapest first step is a quote</h2>
+          <p>Every product is different. Send us a sample or a short description and we come back with a clear, no-obligation quote — usually within 48 hours.</p>
+          <div style="margin-top:16px;"><a class="btn btn--primary btn--lg" href="contact.html">Get a quote</a> <a class="btn btn--ghost btn--lg" href="sample-test.html">Request a sample test</a></div>
+        </div>
+      </div>
+    </section>'''
+PAGES.append(dict(
+    slug="pricing.html", fr="lyophilisation-prix.html",
+    title="Freeze-Drying Cost & Pricing | LyoSurgères",
+    desc="How much does contract freeze-drying cost? Honest price ranges and the factors that drive them: sample test €250–500, cycle development €800–2,500, stability analysis €1,500–4,000. Quote within 48 h.",
+    body=pricing_body,
+    jsonld=[
+        service_ld("Contract freeze-drying — pricing",
+                   "Contract freeze-drying and vacuum microwave drying pricing: sample test, cycle development, stability and shelf-life analysis, production and capacity subscription, across France and Europe."),
+        breadcrumb([("Home", f"{BASE}/en/index.html"), ("Pricing", f"{BASE}/en/pricing.html")]),
     ],
 ))
 

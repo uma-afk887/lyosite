@@ -100,8 +100,15 @@ function footer() {
   </footer>`;
 }
 
-function metaHead(title, desc, canonical, keywords, ogImage) {
+// Matières disposant d'une page produit anglaise (hreflang réciproque).
+const EN_ALT = {
+  huitre: 'freeze-dried-oysters.html',
+  spiruline: 'freeze-dried-spirulina.html',
+};
+
+function metaHead(title, desc, canonical, keywords, ogImage, enHref) {
   ogImage = ogImage || 'https://www.lyosurgeres.fr/og-cover.svg';
+  const enLine = enHref ? `\n  <link rel="alternate" hreflang="en" href="${enHref}">` : '';
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(title)}</title>
@@ -109,7 +116,7 @@ function metaHead(title, desc, canonical, keywords, ogImage) {
   <meta name="keywords" content="${attr(keywords)}">
   <meta name="author" content="LyoSurgères">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="${canonical}">
+  <link rel="canonical" href="${canonical}">${enLine}
   <link rel="alternate" hreflang="fr" href="${canonical}">
   <link rel="alternate" hreflang="x-default" href="${canonical}">
   <meta name="theme-color" content="#0f8b9e">
@@ -225,7 +232,7 @@ function fiche(m) {
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
-${metaHead(title, desc, url, kw, ogImg)}
+${metaHead(title, desc, url, kw, ogImg, EN_ALT[m.slug] ? 'https://www.lyosurgeres.fr/en/' + EN_ALT[m.slug] : '')}
 ${ld.map(x => `  <script type="application/ld+json">\n  ${JSON.stringify(x)}\n  </script>`).join('\n')}
 </head>
 <body>
