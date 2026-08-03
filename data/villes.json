@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "la-rochelle", "nom": "La Rochelle", "dept": "Charente-Maritime (17)", "distanceKm": 25, "tempsMin": 30,
+    "intro": "La Rochelle est à un quart d'heure de route de notre atelier de Surgères : c'est notre bassin le plus proche, et l'un des plus riches en produits à lyophiliser. Entre conchyliculture, pêche et gastronomie, la matière première d'exception ne manque pas.",
+    "filieres": "Le pertuis rochelais vit de la mer : huîtres, moules de bouchot et de filière, coquillages, algues et poissons de petite pêche. La ville concentre aussi une gastronomie de bord de mer et une scène de produits fins (sel de l'île de Ré, safran de l'Aunis, spiruline en bassins) qui cherchent à se différencier. Ces acteurs ont un point commun : des produits ultra-frais, périssables et saisonniers, exactement ceux que la lyophilisation stabilise sans les cuire.",
+    "transport": "À 25 km et environ 30 minutes de Surgères par la N11, La Rochelle permet un dépôt le matin et un retour dans la journée. Sur un trajet aussi court, la chaîne du froid se maîtrise facilement : une glacière ou un caisson isotherme suffit à amener un produit frais ou congelé sans rupture. Pour les volumes réguliers, nous organisons des tournées de collecte.",
+    "exemples": "Huîtres et moules pour des snacks marins et des poudres d'assaisonnement iodées, oursins pour la haute gastronomie, algues et spiruline pour les compléments, herbes et fleurs comestibles pour la restauration.",
+    "related": ["huitre", "moule", "oursin", "spiruline", "wakame"]
+  },
+  {
+    "slug": "rochefort", "nom": "Rochefort", "dept": "Charente-Maritime (17)", "distanceKm": 30, "tempsMin": 35,
+    "intro": "Rochefort, aux portes du bassin de Marennes-Oléron, est à une trentaine de minutes de Surgères. C'est le pays de l'huître par excellence, et un territoire de maraîchage entre Charente et marais.",
+    "filieres": "Le bassin de Marennes-Oléron, tout proche, est la première zone ostréicole d'Europe : l'huître y est affinée en claire, ce qui lui donne une chair et une salinité particulières. Autour de Rochefort, le maraîchage de bord de Charente et les productions de marais complètent le tableau. Les ostréiculteurs cherchent à valoriser les invendus et les petits calibres ; les maraîchers, à allonger la durée de vie de légumes fragiles.",
+    "transport": "À environ 30 km et 35 minutes par la D733, Rochefort est un trajet court où la chaîne du froid ne pose aucune difficulté : transport isotherme direct, sans rupture. Nous pouvons aussi réceptionner des palettes d'huîtres fraîches et assurer la congélation à l'arrivée.",
+    "exemples": "Huîtres de Marennes-Oléron affinées en claire pour des chips iodées et des poudres de chef, moules et coquillages, légumes de marais pour des préparations déshydratées.",
+    "related": ["huitre", "moule", "coproduits-poisson", "tomate"]
+  },
+  {
+    "slug": "niort", "nom": "Niort", "dept": "Deux-Sèvres (79)", "distanceKm": 35, "tempsMin": 35,
+    "intro": "Niort et le Marais poitevin sont à 35 minutes de Surgères. Terre d'agroalimentaire et de productions de marais, le Niortais offre des matières emblématiques que la lyophilisation met parfaitement en valeur.",
+    "filieres": "Le Marais poitevin est le berceau de l'angélique de Niort, une plante aromatique confite depuis des siècles, et d'un maraîchage de marais mouillé (mogette, légumes). Le Poitou est aussi un grand pays de l'élevage caprin et des fromages de chèvre. Ces filières — botaniques fragiles, fromages, légumes — se prêtent bien au séchage à froid, qui fixe les arômes volatils de l'angélique et préserve les ferments d'un fromage.",
+    "transport": "À 35 km et environ 35 minutes par l'A83 ou la D948, Niort est très accessible. Sur ce trajet court, un simple caisson isotherme suffit pour les produits frais ; pour les fromages et les ferments, nous conseillons un transport réfrigéré et une congélation rapide à l'arrivée.",
+    "exemples": "Angélique et plantes aromatiques du marais pour la confiserie et les infusions, fromages de chèvre et yaourts pour des poudres et des snacks, légumes de marais.",
+    "related": ["basilic", "menthe", "fromage", "yaourt", "kefir"]
+  },
+  {
+    "slug": "saintes", "nom": "Saintes", "dept": "Charente-Maritime (17)", "distanceKm": 55, "tempsMin": 50,
+    "intro": "Saintes, sur la Charente, est à moins d'une heure de Surgères, au cœur du pays du cognac et du pineau. Un territoire de vigne, de spiritueux et de botaniques aromatiques.",
+    "filieres": "La région de Saintes vit de la viticulture charentaise et de la distillation : cognac, pineau des Charentes, et une demande croissante en plantes et botaniques aromatiques pour les gins et liqueurs artisanales. Autour, l'agriculture et les productions laitières complètent le paysage. Les distillateurs et créateurs de spiritueux recherchent des botaniques stabilisés à l'arôme intact — un usage de niche où la lyophilisation excelle.",
+    "transport": "À environ 55 km et 50 minutes par la N137, Saintes reste un trajet aisé. La chaîne du froid se gère sans difficulté en transport isotherme ; pour les botaniques très volatils, une congélation rapide dès la récolte préserve au mieux les arômes.",
+    "exemples": "Botaniques et plantes aromatiques pour cognac, gin et liqueurs, marc et raisin, fruits de vergers charentais pour des poudres et des inclusions.",
+    "related": ["chanvre", "menthe", "gingembre", "curcuma", "pomme"]
+  },
+  {
+    "slug": "angouleme", "nom": "Angoulême", "dept": "Charente (16)", "distanceKm": 110, "tempsMin": 80,
+    "intro": "Angoulême, capitale de la Charente, est à environ 1 h 20 de Surgères, au centre du vignoble de cognac. Un bassin de spiritueux et de botaniques, où la valeur ajoutée passe par l'arôme.",
+    "filieres": "La Charente est le cœur historique du cognac : des centaines de distillateurs et de maisons y travaillent la vigne et, de plus en plus, des botaniques pour aromatiser gins et liqueurs. La demande d'ingrédients aromatiques stabilisés — plantes, épices, zestes, fruits — y est forte. C'est un marché premium où l'on juge un ingrédient sur la fidélité de son parfum, terrain de prédilection du séchage à froid.",
+    "transport": "À 110 km et environ 1 h 20 par la N10, Angoulême demande d'anticiper un peu la chaîne du froid : transport réfrigéré ou produit déjà congelé en caisson isotherme renforcé. Nous réceptionnons aussi des envois transporteur en froid dirigé, et pouvons réserver un créneau de traitement à l'arrivée.",
+    "exemples": "Botaniques et épices pour distillateurs, zestes et fruits pour aromatisation, plantes aromatiques et fleurs pour la confiserie et l'infusion.",
+    "related": ["gingembre", "curcuma", "menthe", "basilic", "chanvre"]
+  },
+  {
+    "slug": "poitiers", "nom": "Poitiers", "dept": "Vienne (86)", "distanceKm": 110, "tempsMin": 80,
+    "intro": "Poitiers, préfecture de la Vienne, est à environ 1 h 20 de Surgères. Un bassin agroalimentaire et d'innovation, riche en productions caprines et en savoir-faire de terroir.",
+    "filieres": "Le Poitou est l'une des grandes régions caprines de France : chabichou et fromages de chèvre y sont emblématiques. La Vienne compte aussi une agriculture diversifiée, une tradition confiseuse (macaron de Montmorillon) et un écosystème d'innovation autour de la technopole. Fromages, ferments, fruits et confiseries : autant de produits sensibles à la chaleur, que la lyophilisation stabilise en préservant ferments et arômes.",
+    "transport": "À 110 km et environ 1 h 20 par la N147, Poitiers implique une chaîne du froid soignée : transport réfrigéré, ou congélation avant expédition en caisson isotherme. Pour les fromages et les ferments vivants, ce point est déterminant et nous le calons avec vous.",
+    "exemples": "Fromages de chèvre et yaourts pour des poudres et des snacks, ferments et probiotiques, fruits et confiseries locales pour des inclusions.",
+    "related": ["fromage", "yaourt", "kefir", "colostrum", "fraise"]
+  },
+  {
+    "slug": "nantes", "nom": "Nantes", "dept": "Loire-Atlantique (44)", "distanceKm": 150, "tempsMin": 105,
+    "intro": "Nantes est à moins de 2 heures de Surgères, au cœur d'un des plus grands bassins maraîchers et agroalimentaires de l'Ouest. Un marché dense en marques food et en produits à valoriser.",
+    "filieres": "Le vignoble et le maraîchage nantais sont réputés : mâche nantaise, poireau, muguet, et une longue tradition biscuitière et agroalimentaire (la ville a vu naître de grandes marques). La proximité de l'océan et des marais salants de Guérande ajoute produits de la mer, algues et sel. Ce tissu de producteurs et de marques cherche à différencier ses produits et à réduire le gaspillage de denrées fragiles — deux moteurs pour la lyophilisation.",
+    "transport": "À 150 km et environ 1 h 45 par l'A83, Nantes demande une organisation de la chaîne du froid : transport réfrigéré dédié ou congélation avant expédition. Pour des volumes réguliers, l'envoi en froid dirigé par transporteur et un créneau réservé à l'arrivée sont la solution la plus fluide.",
+    "exemples": "Mâche et légumes nantais pour des poudres et des plats instantanés, produits de la mer et algues, fruits et ingrédients pour les marques food et snacking.",
+    "related": ["epinard", "tomate", "wakame", "spiruline", "fraise"]
+  },
+  {
+    "slug": "bordeaux", "nom": "Bordeaux", "dept": "Gironde (33)", "distanceKm": 180, "tempsMin": 120,
+    "intro": "Bordeaux est à environ 2 heures de Surgères, capitale mondiale du vin et grand bassin gastronomique. Entre viticulture, huîtres d'Arcachon et scène culinaire, les matières à haute valeur y abondent.",
+    "filieres": "La Gironde, c'est d'abord le vignoble bordelais et une économie du vin qui génère des coproduits (marc, raisin) à valoriser. C'est aussi le bassin d'Arcachon et ses huîtres, une gastronomie étoilée exigeante, et une pâtisserie identitaire (canelé). Distillateurs, chefs, marques premium et ostréiculteurs partagent le même besoin : des ingrédients d'exception stabilisés sans perdre en qualité, ce que seule la lyophilisation permet pour les produits les plus délicats.",
+    "transport": "À 180 km et environ 2 heures par l'A10, Bordeaux est notre bassin le plus éloigné : la chaîne du froid s'y anticipe impérativement. Nous privilégions l'expédition de produits congelés en froid dirigé, ou une collecte planifiée, avec un créneau de traitement réservé pour limiter tout délai à l'arrivée.",
+    "exemples": "Huîtres d'Arcachon pour la gastronomie, marc et raisin pour des poudres œnologiques, botaniques pour spiritueux, fruits et desserts pour des inclusions premium.",
+    "related": ["huitre", "oursin", "chanvre", "curcuma", "pomme"]
+  }
+]

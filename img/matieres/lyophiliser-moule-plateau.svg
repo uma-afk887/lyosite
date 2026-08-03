@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="moule lyophilisé — sur plateau de lyophilisation">
+  <rect width="800" height="600" fill="#eef8fa"/>
+  <rect x="8" y="8" width="784" height="584" fill="none" stroke="#0f8b9e" stroke-width="3" stroke-dasharray="12 8"/>
+  <g fill="#0a5f6e" font-family="'Segoe UI',Roboto,Arial,sans-serif" text-anchor="middle">
+    <text x="400" y="274" font-size="30" font-weight="700">moule</text>
+    <text x="400" y="312" font-size="22" font-weight="600">Prise de vue : Sur plateau de lyophilisation</text>
+    <text x="400" y="348" font-size="16" font-family="monospace" fill="#33505f">lyophiliser-moule-plateau.webp</text>
+    <text x="400" y="572" font-size="14" fill="#6b8391">Photo à venir · 800×600</text>
+  </g>
+</svg>

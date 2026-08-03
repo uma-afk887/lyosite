@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="LyoSurgères — lyophilisation à façon à Surgères, près de La Rochelle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#eef8fa"/>
+      <stop offset="1" stop-color="#d9f0f3"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12b5c9"/>
+      <stop offset="1" stop-color="#0a5f6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1010" cy="150" r="260" fill="#5eead4" opacity="0.12"/>
+  <circle cx="150" cy="560" r="220" fill="#0f8b9e" opacity="0.10"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(96,96)">
+    <circle cx="46" cy="46" r="46" fill="url(#mark)"/>
+    <g stroke="#fff" stroke-width="4.4" stroke-linecap="round">
+      <path d="M46 17v58M17 46h58M29 29l34 34M63 29L29 63"/>
+      <path d="M46 17l-6 6M46 17l6 6M46 75l-6-6M46 75l6-6M17 46l6-6M17 46l6 6M75 46l-6-6M75 46l-6 6"/>
+    </g>
+  </g>
+  <text x="212" y="140" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="46" font-weight="800" fill="#0b2432">LyoSurgères</text>
+  <text x="214" y="176" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="21" font-weight="600" letter-spacing="3" fill="#0a5f6e">LYOPHILISATION À FAÇON</text>
+
+  <!-- Headline -->
+  <text x="96" y="330" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0b2432">Lyophilisation</text>
+  <text x="96" y="410" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="72" font-weight="800" fill="#0f8b9e">à façon &amp; sur mesure</text>
+
+  <!-- Subline -->
+  <text x="96" y="470" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="600" fill="#0a5f6e">Surgères (17) · près de La Rochelle · toute la France</text>
+  <text x="96" y="508" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="27" font-weight="500" fill="#33505f">Produits d'exception · séchage micro-ondes · mise en sachet</text>
+
+  <!-- Pills -->
+  <g font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="24" font-weight="600">
+    <rect x="96" y="556" width="250" height="48" rx="24" fill="#ffffff" stroke="#c9e6ea"/>
+    <text x="122" y="587" fill="#0a5f6e">Sans conservateur</text>
+    <rect x="366" y="556" width="238" height="48" rx="24" fill="#ffffff" stroke="#c9e6ea"/>
+    <text x="392" y="587" fill="#0a5f6e">98 % d'eau retirée</text>
+    <rect x="624" y="556" width="210" height="48" rx="24" fill="#ffffff" stroke="#c9e6ea"/>
+    <text x="650" y="587" fill="#0a5f6e">Devis sous 48 h</text>
+  </g>
+</svg>

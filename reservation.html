@@ -5,10 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réserver un créneau — LyoSurgères</title>
   <meta name="description" content="Réservez en ligne votre créneau de dépôt à l'atelier de lyophilisation de Surgères. Choisissez une date, un horaire et décrivez votre produit.">
+  <meta name="keywords" content="réserver lyophilisation, créneau de dépôt, prise de rendez-vous lyophilisation, devis lyophilisation, La Rochelle, Surgères, Charente-Maritime, lyophilisation à façon, produits d'exception, mise en sachet">
+  <meta name="author" content="LyoSurgères">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.lyosurgeres.fr/reservation.html">
+  <meta name="theme-color" content="#0f8b9e">
+  <meta name="geo.region" content="FR-17">
+  <meta name="geo.placename" content="Surgères">
+  <meta name="geo.position" content="46.108;-0.748">
+  <meta name="ICBM" content="46.108, -0.748">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LyoSurgères">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Réserver un créneau — LyoSurgères">
+  <meta property="og:description" content="Réservez en ligne votre créneau de dépôt à l'atelier de lyophilisation de Surgères. Choisissez une date, un horaire et décrivez votre produit.">
+  <meta property="og:url" content="https://www.lyosurgeres.fr/reservation.html">
+  <meta property="og:image" content="https://www.lyosurgeres.fr/og-cover.svg">
+  <meta property="og:image:alt" content="LyoSurgères — lyophilisation à façon à Surgères, près de La Rochelle">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Réserver un créneau — LyoSurgères">
+  <meta name="twitter:description" content="Réservez en ligne votre créneau de dépôt à l'atelier de lyophilisation de Surgères. Choisissez une date, un horaire et décrivez votre produit.">
+  <meta name="twitter:image" content="https://www.lyosurgeres.fr/og-cover.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%230f8b9e'/%3E%3Cg stroke='white' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M24 9v30M11 24h26M15 15l18 18M33 15L15 33'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="fr" href="https://www.lyosurgeres.fr/reservation.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.lyosurgeres.fr/reservation.html">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lyosurgeres.fr/index.html"}, {"@type": "ListItem", "position": 2, "name": "Réservation", "item": "https://www.lyosurgeres.fr/reservation.html"}]}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -27,6 +53,8 @@
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="services.html">Prestations</a></li>
+          <li><a href="matieres/index.html">Matières</a></li>
+          <li><a href="journal/index.html">Journal</a></li>
           <li><a href="a-propos.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -100,10 +128,12 @@
                 <select id="f-service" name="Prestation" required>
                   <option value="">— Choisir une prestation —</option>
                   <option value="alimentaire">Alimentaire (fruits, plats, café…)</option>
-                  <option value="actifs">CBD, probiotiques &amp; protéines</option>
-                  <option value="souvenirs">Souvenirs, fleurs &amp; animaux</option>
+                  <option value="mer">Huîtres, oursins &amp; produits de la mer</option>
+                  <option value="spiruline">Spiruline &amp; micro-algues</option>
+                  <option value="actifs">Actifs botaniques &amp; compléments</option>
+                  <option value="souvenirs">Souvenirs &amp; fleurs</option>
                   <option value="documents">Documents &amp; sinistres (dégât des eaux)</option>
-                  <option value="pro">Producteur / artisan (lot pilote)</option>
+                  <option value="pro">Marque / producteur — R&amp;D &amp; lots pilotes</option>
                   <option value="autre">Autre / je ne sais pas</option>
                 </select>
               </div>
@@ -157,6 +187,13 @@
 
               <div class="field">
                 <label class="checkbox">
+                  <input type="checkbox" id="f-stockage" name="StockageFroid">
+                  <span>J'aimerais un <a href="stockage-froid.html">stockage froid</a> de ma matière avant le cycle (4 semaines offertes pour un créneau réservé).</span>
+                </label>
+              </div>
+
+              <div class="field">
+                <label class="checkbox">
                   <input type="checkbox" id="f-consent" name="Consentement" required>
                   <span>J'accepte que mes informations soient utilisées pour traiter ma demande de réservation. <span class="req">*</span></span>
                 </label>
@@ -192,10 +229,12 @@
           <h4>Prestations</h4>
           <ul>
             <li><a href="reservation.html?service=alimentaire">Alimentaire</a></li>
-            <li><a href="reservation.html?service=actifs">CBD, probiotiques, protéines</a></li>
-            <li><a href="reservation.html?service=souvenirs">Souvenirs &amp; animaux</a></li>
+            <li><a href="reservation.html?service=mer">Huîtres &amp; produits de la mer</a></li>
+            <li><a href="reservation.html?service=spiruline">Spiruline &amp; micro-algues</a></li>
+            <li><a href="reservation.html?service=actifs">Actifs botaniques &amp; compléments</a></li>
+            <li><a href="reservation.html?service=souvenirs">Souvenirs &amp; fleurs</a></li>
             <li><a href="reservation.html?service=documents">Documents &amp; sinistres</a></li>
-            <li><a href="reservation.html?service=pro">Producteurs &amp; artisans</a></li>
+            <li><a href="reservation.html?service=pro">Marques, producteurs &amp; R&amp;D</a></li>
           </ul>
         </div>
         <div>
@@ -203,6 +242,7 @@
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="services.html">Prestations</a></li>
+            <li><a href="developpement-cycle.html">Développement de cycle</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="reservation.html">Réserver</a></li>
             <li><a href="contact.html">Contact</a></li>

@@ -59,4 +59,73 @@ window.SITE_CONFIG = {
     instagram: "",
     linkedin: "",
   },
+
+  // --- sameAs : profils qui PROUVENT que vous êtes une entité --
+  // Ces URL relient votre site à votre entité (Google Business
+  // Profile, LinkedIn, annuaires, Wikidata). C'est ce que Google
+  // et les LLM lisent pour décider si vous êtes une vraie
+  // entreprise. Cette liste est aussi écrite en dur dans le
+  // JSON-LD de index.html (bloc #business) — pensez à mettre les
+  // DEUX à jour, ou supprimez ici les lignes non encore créées.
+  // ⚠️ Ne laissez que des URL qui EXISTENT (une URL morte nuit).
+  sameAs: [
+    // Google Business Profile — après création, copiez l'URL
+    // « Maps » de votre fiche (format https://maps.google.com/?cid=...) :
+    // "https://maps.google.com/?cid=VOTRE_CID",
+    // LinkedIn — créez la page entreprise puis collez son URL :
+    // "https://www.linkedin.com/company/lyosurgeres",
+    // Annuaires pro (PagesJaunes, Societe.com, Kompass…) :
+    // "https://www.pagesjaunes.fr/pros/VOTRE_FICHE",
+  ],
+
+  // --- Localisation (cohérence NAP — adresse physique unique) -
+  // L'adresse du LocalBusiness est Surgères. La Rochelle n'est
+  // qu'une zone desservie (contenu / SEO), jamais l'adresse.
+  geo: { lat: 46.108, lng: -0.748, placename: "Surgères" },
+  areaServed: ["La Rochelle", "Surgères", "Charente-Maritime", "Nouvelle-Aquitaine", "France"],
+
+  // --- Numéro d'urgence sinistres (7j/7) ----------------------
+  emergencyPhone: "06 00 00 00 00",
+
+  // --- Tarifs indicatifs (affichés sur le site) ---------------
+  // Modifiez librement : ces valeurs alimentent les pages et widgets.
+  pricing: {
+    testEchantillon: { min: 250, max: 500, unit: "par échantillon (200 g)" },
+    developpementCycle: { min: 800, max: 2500, unit: "par essai" },
+    analyseStabilite: { min: 1500, max: 4000, unit: "par produit" },
+    abonnementRemiseSeuil: 24, // cycles/an au-delà desquels s'applique la remise
+    abonnementRemisePct: 10,   // % de remise
+    // Simulateur d'abonnement capacité (valeurs indicatives, à ajuster)
+    capacite: {
+      cycleBase: 600,   // € pour un cycle à 1 chariot
+      chariot: 250,     // € par chariot supplémentaire
+      mult: { standard: 1, premium: 1.2, sensible: 1.35 }, // selon la famille de produit
+      // Simulateur de campagne industrielle (valeurs indicatives)
+      kgParCycle: 150,        // kg humides traités par cycle
+      cyclesParSemaine: 10,   // en fonctionnement continu
+      prixTonne: { standard: 9000, premium: 12000, sensible: 16000 }, // € par tonne humide traitée
+    },
+  },
 };
+
+/* -------------------------------------------------------------
+   Injection du sameAs dans l'entité #business (toutes les pages).
+   Empty-safe : tant que sameAs est vide, rien n'est émis (pas
+   d'URL morte). Dès que vous renseignez SITE_CONFIG.sameAs,
+   la propriété apparaît dans les données structurées de toutes
+   les pages qui chargent config.js, reliée à l'entité canonique
+   définie dans index.html (@id …/#business).
+   ------------------------------------------------------------- */
+(function () {
+  var same = (window.SITE_CONFIG.sameAs || []).filter(Boolean);
+  if (!same.length || typeof document === "undefined") return;
+  var node = {
+    "@context": "https://schema.org",
+    "@id": "https://www.lyosurgeres.fr/#business",
+    "sameAs": same,
+  };
+  var s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.textContent = JSON.stringify(node);
+  (document.head || document.documentElement).appendChild(s);
+})();
