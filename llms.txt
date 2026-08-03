@@ -65,6 +65,13 @@ La plupart des clients n'ont pas besoin de lyophilisation : ils ont besoin d'un 
 - [Réservation](https://www.lyosurgeres.fr/reservation.html) : choix d'une date et d'un créneau de dépôt.
 - [Contact](https://www.lyosurgeres.fr/contact.html) : adresse, téléphone, e-mail, formulaire.
 
+## English pages (contract freeze-drying, Europe)
+- [Contract freeze-drying — home (EN)](https://www.lyosurgeres.fr/en/index.html) : contract freeze-drying and vacuum microwave drying in France, for the whole of Europe.
+- [Contract freeze-drying — pillar (EN)](https://www.lyosurgeres.fr/en/contract-freeze-drying.html) : toll lyophilization, two technologies, R&D, pilot runs, stability/shelf-life, private label, barrier packaging, FAQ.
+- [Sample test 200 g (EN)](https://www.lyosurgeres.fr/en/sample-test.html) : send 200 g, get a freeze-dried sample and a technical spec sheet; €250–500, deductible from the first batch.
+- [About (EN)](https://www.lyosurgeres.fr/en/about.html) : freeze-drying company near La Rochelle, capabilities and location.
+- [Contact (EN)](https://www.lyosurgeres.fr/en/contact.html) : request a contract freeze-drying quote (France & Europe).
+
 ## Contact
 - E-mail : contact@lyosurgeres.fr
 - Téléphone : 05 46 00 00 00
