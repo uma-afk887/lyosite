@@ -60,6 +60,24 @@ window.SITE_CONFIG = {
     linkedin: "",
   },
 
+  // --- sameAs : profils qui PROUVENT que vous êtes une entité --
+  // Ces URL relient votre site à votre entité (Google Business
+  // Profile, LinkedIn, annuaires, Wikidata). C'est ce que Google
+  // et les LLM lisent pour décider si vous êtes une vraie
+  // entreprise. Cette liste est aussi écrite en dur dans le
+  // JSON-LD de index.html (bloc #business) — pensez à mettre les
+  // DEUX à jour, ou supprimez ici les lignes non encore créées.
+  // ⚠️ Ne laissez que des URL qui EXISTENT (une URL morte nuit).
+  sameAs: [
+    // Google Business Profile — après création, copiez l'URL
+    // « Maps » de votre fiche (format https://maps.google.com/?cid=...) :
+    // "https://maps.google.com/?cid=VOTRE_CID",
+    // LinkedIn — créez la page entreprise puis collez son URL :
+    // "https://www.linkedin.com/company/lyosurgeres",
+    // Annuaires pro (PagesJaunes, Societe.com, Kompass…) :
+    // "https://www.pagesjaunes.fr/pros/VOTRE_FICHE",
+  ],
+
   // --- Localisation (cohérence NAP — adresse physique unique) -
   // L'adresse du LocalBusiness est Surgères. La Rochelle n'est
   // qu'une zone desservie (contenu / SEO), jamais l'adresse.
@@ -89,3 +107,25 @@ window.SITE_CONFIG = {
     },
   },
 };
+
+/* -------------------------------------------------------------
+   Injection du sameAs dans l'entité #business (toutes les pages).
+   Empty-safe : tant que sameAs est vide, rien n'est émis (pas
+   d'URL morte). Dès que vous renseignez SITE_CONFIG.sameAs,
+   la propriété apparaît dans les données structurées de toutes
+   les pages qui chargent config.js, reliée à l'entité canonique
+   définie dans index.html (@id …/#business).
+   ------------------------------------------------------------- */
+(function () {
+  var same = (window.SITE_CONFIG.sameAs || []).filter(Boolean);
+  if (!same.length || typeof document === "undefined") return;
+  var node = {
+    "@context": "https://schema.org",
+    "@id": "https://www.lyosurgeres.fr/#business",
+    "sameAs": same,
+  };
+  var s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.textContent = JSON.stringify(node);
+  (document.head || document.documentElement).appendChild(s);
+})();

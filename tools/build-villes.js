@@ -61,7 +61,7 @@ function ville(v) {
   const desc = `Lyophilisation à façon pour ${v.nom} et ${v.dept}, à ${v.distanceKm} km de notre atelier de Surgères (~${v.tempsMin} min). Filières locales, transport, chaîne du froid et matières typiques du bassin.`;
   const kw = `lyophilisation ${v.nom}, lyophilisation à façon ${v.nom}, prestataire lyophilisation ${v.nom}, séchage à froid ${v.nom}, ${v.dept}, Surgères`;
   const ld = [
-    { '@context': 'https://schema.org', '@type': 'Service', name: `Lyophilisation à façon près de ${v.nom}`, provider: { '@type': 'LocalBusiness', name: 'LyoSurgères', url: 'https://www.lyosurgeres.fr/' }, areaServed: { '@type': 'City', name: v.nom }, description: desc },
+    { '@context': 'https://schema.org', '@type': 'Service', name: `Lyophilisation à façon près de ${v.nom}`, provider: { '@type': 'LocalBusiness', '@id': 'https://www.lyosurgeres.fr/#business', name: 'LyoSurgères', url: 'https://www.lyosurgeres.fr/' }, areaServed: { '@type': 'City', name: v.nom }, description: desc },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.lyosurgeres.fr/index.html' },
       { '@type': 'ListItem', position: 2, name: 'Zones desservies', item: 'https://www.lyosurgeres.fr/villes/index.html' },
